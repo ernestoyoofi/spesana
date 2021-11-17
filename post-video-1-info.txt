@@ -1,0 +1,12 @@
+title video : post-video-1.mp4
+format files : mp4
+video resolution : 720p
+frame rate : 30 frame rate
+send by : Hanan Maulana Sidiq
+description : -
+playlist : Index-Home-Post-Video
+from : -
+location : -
+color : 64Bit
+code : H4-MP4-VID-20211116-EX-Ernestostudio
+url : -
