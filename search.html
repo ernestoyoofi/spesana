@@ -15,7 +15,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Title -->
-<title>Kelas 7B Nanggulan 1 | Informasi </title>
+<title>Kelas 7B Nanggulan 1 | 🔍 Search </title>
 
 <!-- Consol Log -->
 <script>
@@ -141,20 +141,37 @@ hr {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myUL {
+  text-decoration:none;
+}
+#myUL li a {
+  padding: 2px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
 </style>
 <head>
 				<!-- Bar Menu -->
 <div class="navbar">
 				<!-- Menu -->
   <div class="dropdown">
-    <button class="dropbtn">Informasi 
+    <button class="dropbtn" style="background-color:#82acff;">Searching Page 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-    				<a href="search.html" style="color:white; background-color:#82acff;"><i class="fa fa-search"></i> Searching Page</a>
+    				<a href="search.html" style="color:white; background-color:red;"><i class="fa fa-search"></i> Searching Page</a>
       <a href="index.html" style=" color:white;">Home</a>
       <a href="buku.html"style="color:white">Buku Pelajaran</a>
-      <a style="color:white; background-color:red;"><i class="fa fa-info"></i> Informasi</a>
+      <a href="informasi.html" style="color:white;">Informasi</a>
       <a href="murid.html" style="color:white;">Murid</a>
       <a href="jadwal.html" style="color:white">Jadwal ( Ujian PAS )</a>
       <a href="galeri-video.html" style="color:white">Galeri Video</a>
@@ -166,13 +183,14 @@ hr {
   </div>
   <!-- Kelas -->
     <div class="dropdown">
-    <button class="dropbtn">List 
+    <button class="dropbtn">Tag Bar
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-    				<a href="#hot" style="color:white; background-color:orange;">Hots 🔥</a>
+    				<a href="#hot" style="color:white;">Page</a>
     				<a href="#materi-ujian" style="color:white">Materi Ujian</a>
-      <a href="#aol" style="color:white">And Other List</a>
+    				<a href="#informasi">Informasi</a>
+      <a href="#siswa" style="color:white">Siswa</a>
     </div>
     </div>
 </div>
@@ -180,27 +198,66 @@ hr {
 				<!-- url text -->
 		<p class="space"></p>
 		<div class="tamplate">
-		<p style="color:#000000"><a href="index.html" style="color:#000000">Home</a> <i class="fa fa-caret-right"></i> Informasi</p>
+		<p style="color:#000000"> <input type="search" id="myInput" onkeyup="myFunction()" placeholder="Searching..." title="Type in a name"></p>
+		<p><a href="search.html" style="font-size:10px; color:#000000">[ <i class="fa fa-refresh"></i> Reload Page / F5 ]</a> <a href="setting.html#search" style="font-size:10px; color:#000000">[ <i class="fa fa-gear"></i> Setting Searching ]</a></p>
 		</div>
-		<!-- Hots # tag -->
-				<p class="space" id="hot"></p>
-		<div class="tamplate">
-		<center style="color:#000000"><b>Hot 🔥/ Teratas</b></center>
-		</div>
-		<!-- Hasil Test Swab -->
-		
-		<!-- Materi Ujian #tag -->
-		<p class="space" id="materi-ujian"></p>
-		<div class="tamplate">
-		<center style="color:#000000"><b>Materi Ujian Kelas VII B</b></center>
-		</div>
-		<!-- Materi Ujian 7B -->
+		<!-- Search -->
+				<p class="space "id="search"></p>
+<ul id="myUL">
+				<!-- Home -->
+		<li><a href="index.html"><div class="tamplate">
+		<p><b>Halaman Awal</b></p>
 		<p class="space"></p>
-  <div class="tamplate">
-  	<img src="informasi-2.png" alt="informasi" width="100%" style="box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.145);">
-  	<h4>Kisi Kisi PPKN 7B Penilaian Akhir Semester 1 2021-2022</h4>
-  </div>
+		<h5 style="font-size:9px;">Click To In Page <i class="fa fa-caret-right"></i> Home</h5>
+		</div></a></li>
+				<!-- Jadwal Ujian -->
+  <li><a href="jadwal.html#ujianpas"><div class="tamplate">
+		<p><b>Jadwal Ujian Penilaian Akhir Semester 1</b></p>
+		<p class="space"></p>
+		<h5 style="font-size:9px;">Click To In Page <i class="fa fa-caret-right"></i> Jadwal #ujianpas</h5>
+		</div></a></li>
+		<!-- Informasi -->
+		<li><a href="informasi.html"><div class="tamplate">
+		<p><b>Informasi</b></p>
+		<p class="space"></p>
+		<h5 style="font-size:9px;">Click To In Page <i class="fa fa-caret-right"></i> Informasi</h5>
+		</div></a></li>
+		<!-- Buku -->
+		<li><a href="buku.html"><div class="tamplate">
+		<p><b>Buku Pelajaran</b></p>
+		<p class="space"></p>
+		<h5 style="font-size:9px;">Click To In Page <i class="fa fa-caret-right"></i> Buku Pelajaran</h5>
+		</div></a></li>
+		<!-- Galeri Foto -->
+		<li><a href="galeri-foto.html"><div class="tamplate">
+		<p><b>Galeri Foto / Gambar</b></p>
+		<p class="space"></p>
+		<h5 style="font-size:9px;">Click To In Page <i class="fa fa-caret-right"></i> Galeri Foto</h5>
+		</div></a></li>
+		<!-- Galeri Video -->
+		<li><a href="galeri-video.html"><div class="tamplate">
+		<p><b>Galeri Video</b></p>
+		<p class="space"></p>
+		<h5 style="font-size:9px;">Click To In Page <i class="fa fa-caret-right"></i> Galeri Video</h5>
+		</div></a></li>
+		<!-- Galeri Link -->
+		<li><a href="galeri-link.html"><div class="tamplate">
+		<p><b>Galeri Link</b></p>
+		<p class="space"></p>
+		<h5 style="font-size:9px;">Click To In Page <i class="fa fa-caret-right"></i> Galeri Link</h5>
+		</div></a></li>
+		<!-- Status Komputer Server -->
+		<li><a href="https://www.githubstatus.com"><div class="tamplate">
+		<p><b>Status Komputer Server</b></p>
+		<p class="space"></p>
+		<h5 style="font-size:9px;">Click To In Page <i class="fa fa-caret-right"></i> www.githubstatus.com</h5>
+		</div></a></li>
+</ul>
   <p class="space"></p>
+  <!-- Java Script Search -->
+<script src="search.js">
+</script>
+<!-- Cek Scripting -->
 </div>
 <hr id="info">
 <div class="about">
