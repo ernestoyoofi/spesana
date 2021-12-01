@@ -9,13 +9,13 @@
 <script async src="https://cdn.ampproject.org/v0.mjs"></script>
 <!-- Format Files -->
 <meta charset="UTF-8">
-    
+
 <!-- Scale Resolution -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Title -->
 <title>Kelas 7B Nanggulan 1 | 🏠 Home</title>
-
+<?xml src="deskripsi.xml">
 <!-- Consol Log -->
 <script src="consol-log.js">
 </script>
@@ -72,7 +72,16 @@ hr {
 		background-color: #fff;
 		border-radius: 0px;
 		center:0;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+iframe {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+img{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+video {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .navbar {
   overflow: hidden;
@@ -133,9 +142,19 @@ hr {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+.alert-warn{
+  width: 92%;
+  background-color: #ff9a6b;
+  padding: 12px;
+  border: 0.4px solid orange;
+  border-left: 7px solid #ff5203;
+  border-radius: 4px;
+	 position: fixed;
+	 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 </style>
-<head>
+</head>
+<body>
 				<!-- Bar Menu -->
 <div class="navbar">
 				<!-- Menu -->
@@ -150,10 +169,10 @@ hr {
       <a href="informasi.html" style="color:white">Informasi</a>
       <a href="murid.html" style="color:white;">Murid</a>
       <a href="jadwal.html" style="color:white">Jadwal ( Ujian PAS )</a>
-      <a href="galeri-video.html" style="color:white">Galeri Video</a>
-      <a href="galeri-foto.html" style="color:white">Galeri Foto</a>
-      <a href="galeri-link.html" style="color:white">Galeri link</a>
+      <a href="gallery.html" style="color:white">Gallery</a>
       <a href="https://ernestoyoofi.github.io/send-bug" style="color:white">Report Bug</a>
+      <a href="upload.html" style="color:white">Upload Files</a>
+      <a href="pertanyaan.html">Pertanyaan</a>
     </div>
     
   </div>
@@ -172,6 +191,7 @@ hr {
     </div>
     </div>
 </div>
+
 <div class="dasboard">
 				<!-- update -->
 
@@ -184,6 +204,7 @@ hr {
 		<div class="tamplate">
 						<center><b>High Tag🔥 / Tag Teratas</b></center>
 		</div>
+		
 		<p class="space"></p>
 		<!-- Hasil Test PCR -->
 		<div class="tamplate">
@@ -198,14 +219,14 @@ hr {
 		<p style="font-size: 11px;"><a href="#" style="color:#000000">Home <i class="fa fa-caret-right"></i></a><a href="jadwal.html#ujianpas" style="color:#000000"> Jadwal #ujianpas</a>
 		</div>
 		<p class="space" id="video"></p>
-		<a href="galeri-video.html"><div class="tamplate">
-						<center><b>Video</b></center>
+		<a href="gallery.html"><div class="tamplate">
+						<center><b style="color:#000000">Video</b></center>
 		</div></a>
 		<!-- Praktek IPA Kelas 7B Sesi 1 -->
 		<p class="space"></p>
   <div class="tamplate">
-  				  <p><img src="profil-hanan.png" width="18" height="18" style="box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.145);"><b> Hanan Maulana</b></p>
-	      <video width="98%" controls style="box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.145);">
+  				  <p><img src="profil-hanan.png" width="18" height="18"><b> Hanan Maulana</b></p>
+	      <video width="98%" controls>
        <source src="post-video-1.mp4" type="video/mp4">
        </video>
        <b>Praktek IPA Kelas 7B Sesi 1</b>
@@ -214,13 +235,33 @@ hr {
   </div>
   <p class="space" id="foto"></p>
   <!-- Foto -->
-		<a href="galeri-foto.html"><div class="tamplate">
-						<center><b>Foto</b></center>
+		<a href="gallery.html#foto"><div class="tamplate">
+						<center><b  style="color:#000000">Foto</b></center>
 		</div></a>
+		<!-- Piket -->
+		<p class="space"></p>
+		<!-- Plajaran -->
+  <div class="tamplate">
+  				<p><img src="profil-ernesto.png" width="18" height="18"><b> Ernesto yoofi</b></p>
+	      <img src="post-image-3.jpg" alt="format-1080p-post-3" width="100%">
+       <b>Pelajaran Bahasa Jawa</b>
+       <p class="space"></p>
+	      <h5 style="color:#000000">Pelajaran Bahasa Jawa Tentang Parikan</h5>
+	      <p class="space"></p>
+	      <h5 style="color:#000000; font-size:10px;">Upload [ 1 Desember 2021/09:29 ]</h5>
+  </div>
+  <p class="space"></p>
+  <div class="tamplate">
+  				<p><img src="profil-ernesto.png" width="18" height="18"><b> Spesana</b></p>
+	      <img src="post-image-3(1).jpg" alt="post-1080p&hdr-xiaomi-pocom3-potratet" width="100%">
+       <b>Piket Kelas</b>
+	      <h5 style="color:#000000">.</h5>
+	      <h5 style="color:#000000; font-size:10px;">Upload [ 1 Desember 2021/10:05 ]</h5>
+  </div>
 		<!-- Kulonprogo Terhindar Dari Covid 19 -->
   <p class="space"></p>
   <div class="tamplate">
-  				<p><img src="profil-spesana.png" width="18" height="18" style="box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.145);"><b> Spesana</b></p>
+  				<p><img src="profil-spesana.png" width="18" height="18"><b> Spesana</b></p>
 	      <img src="post-image-2.jpg" alt="Kulonprogo Terhindar Dari Covid" width="98%">
        <b>Selamat Hari Guru</b>
 	      <h5 style="color:#000000">.</h5>
@@ -230,14 +271,15 @@ hr {
   <div class="tamplate">
   				  <p><img src="profil-catrin.png" width="18" height="18" style="box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.145);"><b> Catarina Astuti</b></p>
 	      <img src="post-image-1.jpg" alt="Kulonprogo Terhindar Dari Covid" width="98%">
+	      <img src="post-image-1(1).jpg" alt="Kulonprogo Terhindar Dari Covid" width="98%">
        <b>Kulonprogo Terhindar Dari Covid 19</b>
 	      <h5 style="color:#000000">.</h5>
 	      <h5 style="color:#000000; font-size:10px;">Upload [ 25 Agustus 2021/21:32 ]</h5>
   </div>
   <p class="space" id="link"></p>
   <!-- Link -->
-		<a href="galeri-link.html"><div class="tamplate">
-						<center><b>Link</b></center>
+		<a href="gallery.html#link"><div class="tamplate">
+						<center><b style="color:#000000">Link</b></center>
 		</div></a>
   <p class="space"></p>
   <!-- link spesana asli -->
@@ -434,9 +476,8 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=nBGbCZgPiwc"style="c
 🔹 Command NightBot :
 Help : [ !command ]<a href="https://www.youtube.com/watch?v=74BPaL8FHz8" style="color:orange">... Baca selanjutnya</a></p>
   </div>
-  <p class="space"></p>
+  <p class="space"id="info"></p>
 </div>
-<hr id="info">
 <div class="about">
 				<b style="padding-left: 9px;">Terimakasih Untuk Supportnya</b><p style="padding: 3px;"></p>
 				<hr class="hr-c"><p style="padding: 3px;"></p>
@@ -494,7 +535,6 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=74BPaL8FHz8" style="
 				</ul>
 				<p style="padding: 15px;"></p>
 </div>
-<hr>
 <div class="end-page">
 				<p class="space"></p>
 				<center>
@@ -503,6 +543,5 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=74BPaL8FHz8" style="
 				</center>
 				<p class="space"></p>
 </div>
-<hr>
-</head>
+</body>
 </html>
