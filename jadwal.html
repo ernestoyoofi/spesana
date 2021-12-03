@@ -22,7 +22,9 @@
 </script>
 <!-- Icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+<!-- CSS Loading -->
+<link rel="stylesheet" href="loading.css">
 <!-- Html Css Seris Style -->
 <style>
 *, body{ margin:0;
@@ -50,26 +52,36 @@ hr {
   width: 160px;
 }
 .end-page {
-  padding: 2px;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+  padding-top: 2px;
   background-color: #393939;
 }
 .about {
+  
+  width: 100%;
+  height: 100%;
   padding-top: 16px;
-  padding-left: 12px;
-  background-color: #6666ff;
   color:white;
+  background-color: #6666ff;
+}
+.padding-left-tree {
+ padding-left: 3px;
 }
 .white {
   color: white;
 }
 .dasboard {
   background-color: #ebebeb;
-  padding: 3px;
+  padding:3px;
 }
 .tamplate {
   padding: 9px;
   margin: auto;
   width: 95%;
+  height: 95%;
 		background-color: #fff;
 		border-radius: 0px;
 		center:0;
@@ -155,11 +167,23 @@ td, th {
 .safe{
   background-color:lime;
 }
+.disabled {
+	 background-color:gray;
+}
 .cbutton {
   width: 106px;
 		background-color:gray;
 		padding:5px;
 		border-radius:5px;
+}
+.alert-success{
+  width: 92%;
+  background-color: #ff9a6b;
+  padding: 12px;
+  border: 0.4px solid lime;
+  border-left: 7px solid green;
+  border-radius: 4px;
+	 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 </style>
 <head>
@@ -190,10 +214,10 @@ td, th {
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-    				<a href="#ujianpas" style="color:white; background-color:orange;">Ujian Akir Semester</a>
-    				<a href=""style="color:white;"><i class="fa fa-file-pdf-o"></i> Open Whit WPS [ Read Only ]</a>
-    				<a href=""style="color:white;"><i class="fa fa-file-word-o"></i> Open Whit Office Word 2020</a>
-    				<a href="" style="color:white"><i class="fa fa-file-excel-o"></i> Open Whit Office Excel 2020</a>
+    				<a href="#jadwal-ujian-pas" style="color:white; background-color:orange;">Ujian Akir Semester</a>
+    				<a href="" style="color:white"><i class="fa fa-file-excel-o"></i> Open With Office Excel 2020</a>
+    				<a href="#jadwal-ptm" style="color:white; background-color:orange;">Jadwal PTM</a>
+    				<a href=""><i class="fa fa-file-excel-o"></i> Open With Office Excel</a>
     </div>
     </div>
 </div>
@@ -203,7 +227,7 @@ td, th {
 		<div class="tamplate">
 		<p style="color:#000000"><a href="index.html" style="color:#000000">Home</a> <i class="fa fa-caret-right"></i> Jadwal</p>
 		</div>
-		<p class="space"></p>
+		<p class="space" id="jadwal-ujian-pas"></p>
 		<div class="tamplate">
 		<center><b>Jadwal Pelaksanaan Penilaian Akhir Semester Gasal (PAS)</b></center>
 		<center><b>Tahun Pelajaran 2021/2022</b></center>
@@ -217,13 +241,13 @@ td, th {
     <th>Waktu</th>
   </tr>
   <tr class="warning">
-  			<th>Senin</th>
+  			<th>Jumat</th>
   			<th></th>
   			<th></th>
   			<th></th>
   			<th></th>
   </tr>
-  <tr>
+  <tr class="disabled">
     <td>Jum'at 3 Desember 2021</td>
     <td>1</td>
     <td>07:30</td>
@@ -388,28 +412,93 @@ td, th {
     <td>Jum'at 10 Desember 2021</td>
     <td>1</td>
     <td>07:30</td>
-    <td>Prakarya</td>
+    <td>IPS</td>
     <td>50 Menit</td>
   </tr>
   <tr>
   			<td>Jum'at 10 Desember 2021</td>
   			<td>2</td>
   			<td>09:30</td>
-  			<td>Prakarya</td>
+  			<td>IPS</td>
   			<td>50 Menit</td>
   </tr>
 </table>
 <p class="space"></p>
-<div class="cbutton"><a href="jadwal-ujian.pdf"><i class="fa fa-download"></i> Download File</a></div>
 <h4>Catatan : Pelaksanaan PAS Untuk Hari Jum'at 3 Desember 2021 Dilaksanakan Secara Daring Dari Rumah</h4>
+<div class="cbutton"><a href="jadwal-ujian.pdf"><i class="fa fa-download"></i> Download File</a></div>
 		</div>
-  <p class="space"></p>
+<p class="space"></p>
+<div class="tamplate" id="jadwal-ptm">
+		<center><b>Jadwal Pelajaran Tatap Muka</b></center>
+		<center><b>Tahun Pelajaran 2021/2022</b></center>
+<p class="space"></p>
+<table>
+  <tr class="warning">
+    <th>Jam</th>
+    <th>7A</th>
+    <th>7B</th>
+    <th>7C</th>
+    <th>7D</th>
+    <th>7E</th>
+    <th>7F</th>
+  </tr>
+  <tr class="warning">
+  			<th>Senin</th>
+  			<th></th>
+  			<th></th>
+  			<th></th>
+  			<th></th>
+  			<th></th>
+  			<th></th>
+  </tr>
+  <tr>
+    <td>07:30 - 09:00</td>
+    <td>Bahasa Inggris</td>
+    <td>Bahasa Indonesia</td>
+    <td>IPA</td>
+    <td>PJOK</td>
+    <td>Matematika</td>
+    <td>IPS</td>
+  </tr>
+  <tr>
+    <td>09:00</td>
+    <td>BK</td>
+    <td>Bahasa Indonesia</td>
+    <td>IPA</td>
+    <td>PJOK</td>
+    <td>Matematika</td>
+    <td>IPS</td>
+  </tr>
+  <tr>
+    <td>09:30 - 10:00</td>
+    <td>Pendidikan Agama</td>
+    <td>IPS</td>
+    <td>Bahasa Indonesia</td>
+    <td>Bahasa Inggris</td>
+    <td>IPA</td>
+    <td>Prakarya</td>
+  </tr>
+  <tr>
+  			<td>10:00 - 10:30</td>
+  			<td>Pendidikan Agama</td>
+  			<td>IPS</td>
+  			<td>Bahasa Indonesia</td>
+  			<td>Bahasa Inggris</td>
+  			<td>IPA</td>
+  			<td>BK</td>
+  </tr>
+</table>
+
+<p class="space"></p>
+<div class="cbutton"><a href="jadwal-ptm.pdf"><i class="fa fa-download"></i> Download File</a></div>
 </div>
-<hr id="info">
+
+</div>
+<p class="space" id="info"></p>
 <div class="about">
-				<b style="padding-left: 9px;">Terimakasih Untuk Supportnya</b><p style="padding: 3px;"></p>
-				<hr class="hr-c"><p style="padding: 3px;"></p>
-				<ul style="list-style-type:none;">
+				<b style="padding-left: 15px;">Terimakasih Untuk Supportnya</b><p style="padding: 3px;"></p>
+				<hr class="hr-c padding-left-tree"><p style="padding: 3px;"></p>
+				<ul class="padding-left-tree "style="list-style-type:none;">
 					<li>Yosep Ganny | (Suggestion, Bug Report, Github Frends)</li>
 					<li>Elisabet Lintang | (Suggestion, Bug Report)</li>
 					<li>Hanan Maulana | (Access Website)</li>
@@ -462,7 +551,6 @@ td, th {
 				</ul>
 				<p style="padding: 15px;"></p>
 </div>
-<hr>
 <div class="end-page">
 				<p class="space"></p>
 				<center>
@@ -471,6 +559,5 @@ td, th {
 				</center>
 				<p class="space"></p>
 </div>
-<hr>
 </head>
 </html>
