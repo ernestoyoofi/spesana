@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-				
 <!-- Icon Website -->
 <link rel="icon" href="https://ernestoyoofi.github.io/spesana7b/img/icon-website-spesana.png">
-				
 <!-- optimization file html -->
 <script async src="https://cdn.ampproject.org/v0.mjs"></script>
 <!-- Format Files -->
 <meta charset="UTF-8">
-
 <!-- Scale Resolution -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Website Murid SMP N 1 Nanggulan !">
@@ -23,7 +20,6 @@
 </script>
 <!-- Icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 <!-- Html Css Seris Style -->
 <style>
 *, body{ margin:0;
@@ -32,6 +28,27 @@
 body a {
   text-decoration: none;
   color:white;
+}
+li {
+  color: white;
+}
+h5 {
+  color: white;
+}
+h4 {
+  color: white;
+}
+h3 {
+  color: white;
+}
+h2 {
+  color: white;
+}
+b {
+  color: white;
+}
+p {
+  color: white;
 }
 body {
   font-family: Unispace, Helvetica, sans-serif;
@@ -69,14 +86,15 @@ hr {
   color: white;
 }
 .dasboard {
-  background-color: #ebebeb;
+  background-color: #303030;
   padding: 3px;
 }
 .tamplate {
   padding: 9px;
   margin: auto;
   width: 95%;
-		background-color: #fff;
+  height: 100%;
+		background-color: #1f1f1f;
 		border-radius: 0px;
 		center:0;
 		box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -159,13 +177,111 @@ video {
 	 position: fixed;
 	 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.back-to-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: red;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.main-menu-low-gray{
+  backdrop-filter: blur(8px);
+  background-color: rgba(71, 71, 71, 0.25);
+  border-top-right-radius: 0px; 
+  border-bottom-right-radius: 0px;
+  border-right: 1px solid gray;
+  width: 42px; 
+  height: 42px; 
+  position: fixed; 
+  top:0; 
+  left:0;
+  overflow-x: hidden; 
+  overflow-y: hidden; 
+  white-space: nowrap;
+  transition: .5s ease;
+}
+.main-menu-low-gray:hover { 
+  width : 267px;
+  height : 100%;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 2px, rgba(0, 0, 0, 0.23) 0px 3px 3px, rgba(0, 0, 0, 0.16) 0px 3px 5px, rgba(0, 0, 0, 0.23) 0px 3px 8px;
+} 
+.main-menu-low-gray
+.menu-item { 
+  padding: 10px;
+}
+.main-menu-low-gray
+.menu-item:hover{
+  background-color: rgba( 120, 120, 120, 0.3); 
+  cursor: pointer;
+}
+.animations {
+  transition: 0.5s ease;
+}
+.animations:hover {
+  animation-name: example;
+  animation-duration: 12s;
+  animation-delay: 5s;
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+.main-menu-low-gray
+.menu-item 
+.fa{ 
+  color: white; 
+  width: 45px; 
+  font-size: 18px;
+  padding: 2px;
+} 
+.main-menu-low-gray
+.menu-item:hover
+.fa{ #
+  color: #1d0daa;
+}
+section.home{ 
+  background-color: #f3f3f3;
+} 
+  ::-webkit-scrollbar { 
+  width: 5px;
+}
+  ::-webkit-scrollbar-track { 
+  background: transparent !important;
+} 
+  ::-webkit-scrollbar-thumb { 
+  background: #bbbbbb; 
+  border-radius: 10px;
+}
+.menu-space-low-gray{
+  backdrop-filter: blur(8px);
+  position: fixed;
+  background-color: rgba(71, 71, 71, 0.25);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  border-botton: 1px solid orange;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 2px, rgba(0, 0, 0, 0.23) 0px 3px 3px, rgba(0, 0, 0, 0.16) 0px 3px 5px, rgba(0, 0, 0, 0.23) 0px 3px 8px;
+}
+hr {
+  background-color: gray;
+  border: 0.2px solid gray;
+  decoration: none;
+}
 </style>
 </head>
 <body>
 				<!-- Bar Menu -->
-<div class="navbar">
+<!-- <div class="navbar" id="home"> -->
 				<!-- Menu -->
-  <div class="dropdown">
+<!--  <div class="dropdown">
     <button class="dropbtn">Home 
       <i class="fa fa-caret-down"></i>
     </button>
@@ -182,9 +298,9 @@ video {
       <a href="pertanyaan.html" class="white">Pertanyaan</a>
     </div>
     
-  </div>
-  <!-- Kelas -->
-  <div class="dropdown">
+  </div> -->
+  <!-- kelas -->
+ <!-- <div class="dropdown">
     <button class="dropbtn">Tags 
       <i class="fa fa-caret-down"></i>
     </button>
@@ -197,15 +313,19 @@ video {
       <a href="#info" style="color:white">Informasi Website</a>
     </div>
     </div>
+    
 </div>
-
+<a href="#home">
+<div class="back-to-top">
+<center><i class="fa fa-caret-up bg-dark" style="padding-top: 6.5px;"></i></center>
+</div></a> -->
 <div class="dasboard">
 				<!-- update -->
-
+<p style="padding-top: 38px"></p>
 <!-- local url -->
 		<p class="space"></p>
 		<div class="tamplate">
-		<p style="color:#000000"> Home <i class="fa fa-caret-right"></i></p>
+		<p style="color:white"> Home <i class="fa fa-caret-right"></i></p>
 		</div>
 		<p class="space" id="hightag"></p>
 		<div class="tamplate">
@@ -216,18 +336,18 @@ video {
 		<!-- Hasil Test PCR -->
 		<div class="tamplate">
 		<p><b>Hasil Test Antigen & PCR Kelas 7B <i class="fa fa-fire"></i></b></p>
-		<p><a href="hasil-test-antigen-dan-pcr.html" style="font-size: 11px; color:#000000;">Click Here To Page "Kelas 7B Nanggulan | Hasil Test Antigen Dan PCR"</a></p>
-		<p style="font-size: 11px;"><a href="#" style="color:#000000">Home <i class="fa fa-caret-right"></i></a><a href="informasi.html" style="color:#000000"> Informasi <i class="fa fa-caret-right"></i></a><a href="hasil-test-antigen-dan-pcr.html" style="color:#000000"> Hasil Test Antigen Dan PCR</p></a>
+		<p><a href="hasil-test-antigen-dan-pcr.html" style="font-size: 11px;">Click Here To Page "Kelas 7B Nanggulan | Hasil Test Antigen Dan PCR"</a></p>
+		<p style="font-size: 11px;"><a href="#" style="color:white">Home <i class="fa fa-caret-right"></i></a><a href="informasi.html" style="color:white"> Informasi <i class="fa fa-caret-right"></i></a><a href="hasil-test-antigen-dan-pcr.html" style="color:white"> Hasil Test Antigen Dan PCR</p></a>
 		</div>
 		<p class="space"></p>
 		<div class="tamplate">
 		<p><b>Jadwal Ujian Penilaian Akhir Semester 1 <i class="fa fa-fire"></i></b></p>
-		<p><a href="jadwal.html#ujianpas" style="font-size: 11px; color:#000000;">Click Here To Page "Kelas 7B Nanggulan | Jadwal PAS"</a></p>
-		<p style="font-size: 11px;"><a href="#" style="color:#000000">Home <i class="fa fa-caret-right"></i></a><a href="jadwal.html#ujianpas" style="color:#000000"> Jadwal #ujianpas</a>
+		<p><a href="jadwal.html#ujianpas" style="font-size: 11px; color:white;">Click Here To Page "Kelas 7B Nanggulan | Jadwal PAS"</a></p>
+		<p style="font-size: 11px;"><a href="#" style="color:white">Home <i class="fa fa-caret-right"></i></a><a href="jadwal.html#ujianpas" style="color:white"> Jadwal #ujianpas</a>
 		</div>
 		<p class="space" id="video"></p>
 		<a href="gallery.html"><div class="tamplate">
-						<center><b style="color:#000000">Video</b></center>
+						<center><b style="color:white">Video</b></center>
 		</div></a>
 		<!-- Praktek IPA Kelas 7B Sesi 1 -->
 		<p class="space"></p>
@@ -243,7 +363,7 @@ video {
   <p class="space" id="foto"></p>
   <!-- Foto -->
 		<a href="gallery.html#foto"><div class="tamplate">
-						<center><b  style="color:#000000">Foto</b></center>
+						<center><b  style="color:white">Foto</b></center>
 		</div></a>
 		<!-- Piket -->
 		<p class="space"></p>
@@ -253,9 +373,9 @@ video {
 	      <img src="img/post-image-4.jpg" alt="format-1080p-post-3" width="100%">
        <b>IMG_20211202_065105.jpg</b>
        <p class="space"></p>
-	      <h5 style="color:#000000">.</h5>
+	      <h5 style="color:white">.</h5>
 	      <p class="space"></p>
-	      <h5 style="color:#000000; font-size:10px;">Upload [ 2 Desember 2021/07:10 ]</h5>
+	      <h5 style="color:white; font-size:10px;">Upload [ 2 Desember 2021/07:10 ]</h5>
   </div>
   <!--  -->
   <p class="space"></p>
@@ -264,9 +384,9 @@ video {
 	      <img src="img/IMG_20211202_065105.jpg" alt="format-1080p-post-3" width="100%">
        <b>IMG_20211202_065105.jpg</b>
        <p class="space"></p>
-	      <h5 style="color:#000000">.</h5>
+	      <h5 style="color:white">.</h5>
 	      <p class="space"></p>
-	      <h5 style="color:#000000; font-size:10px;">Upload [ 2 Desember 2021/07:10 ]</h5>
+	      <h5 style="color:white; font-size:10px;">Upload [ 2 Desember 2021/07:10 ]</h5>
   </div>
   <!--  -->
   <p class="space"></p>
@@ -275,9 +395,9 @@ video {
 	      <img src="img/post-image-3.jpg" alt="format-1080p-post-3" width="100%">
        <b>Pelajaran Bahasa Jawa</b>
        <p class="space"></p>
-	      <h5 style="color:#000000">Pelajaran Bahasa Jawa Tentang Parikan</h5>
+	      <h5 style="color:white">Pelajaran Bahasa Jawa Tentang Parikan</h5>
 	      <p class="space"></p>
-	      <h5 style="color:#000000; font-size:10px;">Upload [ 1 Desember 2021/09:29 ]</h5>
+	      <h5 style="color:white; font-size:10px;">Upload [ 1 Desember 2021/09:29 ]</h5>
   </div>
   <!--  -->
   <p class="space"></p>
@@ -285,8 +405,8 @@ video {
   				<p><img src="img/profil-ernesto.png" width="18" height="18"><b> Ernesto yoofi</b></p>
 	      <img src="img/post-image-3(1).jpg" alt="post-1080p&hdr-xiaomi-pocom3-potratet" width="100%">
        <b>Piket Kelas</b>
-	      <h5 style="color:#000000">.</h5>
-	      <h5 style="color:#000000; font-size:10px;">Upload [ 1 Desember 2021/10:05 ]</h5>
+	      <h5 style="color:white">.</h5>
+	      <h5 style="color:white; font-size:10px;">Upload [ 1 Desember 2021/10:05 ]</h5>
   </div>
 		<!-- Kulonprogo Terhindar Dari Covid 19 -->
   <p class="space"></p>
@@ -294,8 +414,8 @@ video {
   				<p><img src="img/profil-spesana.png" width="18" height="18"><b> Spesana</b></p>
 	      <img src="img/post-image-2.jpg" alt="Kulonprogo Terhindar Dari Covid" width="98%">
        <b>Selamat Hari Guru</b>
-	      <h5 style="color:#000000">.</h5>
-	      <h5 style="color:#000000; font-size:10px;">Upload [ 25 November 2021/21:32 ]</h5>
+	      <h5 style="color:white">.</h5>
+	      <h5 style="color:white; font-size:10px;">Upload [ 25 November 2021/21:32 ]</h5>
   </div>
   <p class="space"></p>
   <div class="tamplate">
@@ -303,18 +423,18 @@ video {
 	      <img src="img/post-image-1.jpg" alt="Kulonprogo Terhindar Dari Covid" width="98%">
 	      <img src="img/post-image-1(1).jpg" alt="Kulonprogo Terhindar Dari Covid" width="98%">
        <b>Kulonprogo Terhindar Dari Covid 19</b>
-	      <h5 style="color:#000000">.</h5>
-	      <h5 style="color:#000000; font-size:10px;">Upload [ 25 Agustus 2021/21:32 ]</h5>
+	      <h5 style="color:white">.</h5>
+	      <h5 style="color:white; font-size:10px;">Upload [ 25 Agustus 2021/21:32 ]</h5>
   </div>
   <p class="space" id="link"></p>
   <!-- Link -->
 		<a href="gallery.html#link"><div class="tamplate">
-						<center><b style="color:#000000">Link</b></center>
+						<center><b style="color:white">Link</b></center>
 		</div></a>
   <p class="space"></p>
   <!-- link spesana asli -->
   <div class="tamplate">
-  				<a href="https://www.smpn1nanggulan.sch.id/" style="color:#000000">
+  				<a href="https://www.smpn1nanggulan.sch.id/" style="color:white">
   				<b style="font-size:12px;"> www.smpn1nanggulan.sch.id</b>
   				<p class="space"></p>
   				<p><img src="img/profil-spesana.png" alt="nanggulan" width="16" height="16"><b style="font-size:18px; padding-left:8px;">SMP Negeri 1 Nanggulan</b></p>
@@ -324,40 +444,40 @@ video {
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="http://www.smpn1nanggulan.sch.id/read/28/info-ppdb-smpn-1-nanggulan" style="color:#000000">Info PPBD SMPN 1 Nanggulan</a></p>
+  				<p><a href="http://www.smpn1nanggulan.sch.id/read/28/info-ppdb-smpn-1-nanggulan" style="color:white">Info PPBD SMPN 1 Nanggulan</a></p>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="http://smpn1nanggulan.sch.id/read/18/laboratorium-ipa"style="color:#000000">Data Guru & Kariawan </a></p>
+  				<p><a href="http://smpn1nanggulan.sch.id/read/18/laboratorium-ipa"style="color:white">Data Guru & Kariawan </a></p>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="http://www.smpn1nanggulan.sch.id/gallery-photo"style="color:#000000">Gallery Foto</a></p>
+  				<p><a href="http://www.smpn1nanggulan.sch.id/gallery-photo"style="color:white">Gallery Foto</a></p>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="https://www.smpn1nanggulan.sch.id/hubungi-kami"style="color:#000000">Hubungi Kami</a></p>
+  				<p><a href="https://www.smpn1nanggulan.sch.id/hubungi-kami"style="color:white">Hubungi Kami</a></p>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="https://www.smpn1nanggulan.sch.id/read/15/sekolah"style="color:#000000">Sekolah</a></p>
+  				<p><a href="https://www.smpn1nanggulan.sch.id/read/15/sekolah"style="color:white">Sekolah</a></p>
   				<p class="space"></p>
   				<hr>
-  				<a href="https://www.google.com/search?q=SMPN+1+Nanggulan" style="color:#000000; font-size:10px;"><i class="fa fa-search"></i> Google Searching</a>
-  				<p class="space"></p>
-  				<hr>
-  				<p class="space"></p>
-  				<p><a href="https://www.instagram.com/spesana_offical"style="color:#000000"><i class="fa fa-instagram"></i> spesana_official</a></p>
+  				<a href="https://www.google.com/search?q=SMPN+1+Nanggulan" style="color:white; font-size:10px;"><i class="fa fa-search"></i> Google Searching</a>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="https://www.smpn1nanggulan.sch.id/read/15/sekolah"style="color:#000000"><i class="fa fa-twitter"></i> spesana</a></p>
+  				<p><a href="https://www.instagram.com/spesana_offical"style="color:white"><i class="fa fa-instagram"></i> spesana_official</a></p>
+  				<p class="space"></p>
+  				<hr>
+  				<p class="space"></p>
+  				<p><a href="https://www.smpn1nanggulan.sch.id/read/15/sekolah"style="color:white"><i class="fa fa-twitter"></i> spesana</a></p>
   				<p class="space"></p>
   				<hr>
   </div>
   <p class="space"></p>
   <div class="tamplate">
-  				<a href="https://ernestoyoofi.github.io/" style="color:#000000">
+  				<a href="https://ernestoyoofi.github.io/" style="color:white">
   				<b style="font-size:12px;"> ernestoyoofi.github.io</b>
   				<p class="space"></p>
   				<p><img src="https://ernestoyoofi.github.io/icon-website-ernesto.png" alt="ernestoyoofi" width="16" height="16"><b style="font-size:18px; padding-left:8px;">Ernesto Yoofi</b></p>
@@ -367,23 +487,23 @@ video {
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="https://ernestoyoofi.github.io/"style="color:#000000">Home</a></p>
+  				<p><a href="https://ernestoyoofi.github.io/"style="color:white">Home</a></p>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="https://ernestoyoofi.github.io/file"style="color:#000000">File</a></p>
+  				<p><a href="https://ernestoyoofi.github.io/file"style="color:white">File</a></p>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="https://ernestoyoofi.github.io/event"style="color:#000000">List Event</a></p>
+  				<p><a href="https://ernestoyoofi.github.io/event"style="color:white">List Event</a></p>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="https://ernestoyoofi.github.io/"style="color:#000000">Plugin</a></p>
+  				<p><a href="https://ernestoyoofi.github.io/"style="color:white">Plugin</a></p>
   				<p class="space"></p>
   				<hr>
   				<p class="space"></p>
-  				<p><a href="https://ernestoyoofi.github.io/status-server"style="color:#000000">Status Server</a></p>
+  				<p><a href="https://ernestoyoofi.github.io/status-server"style="color:white">Status Server</a></p>
   				<p class="space"></p>
   				<hr>
   </div>
@@ -394,7 +514,7 @@ video {
     <iframe width="100%" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);" src="https://www.youtube.com/embed/FDS84THZtbY">
     	</iframe>
     	<h4>FESTIVAL LANGEN CERITA "DEMANG CILIK"</h4>
-    	<p class="space"></p><a href="https://www.youtube.com/results?search_query=%23kesenian" style="color:#000000"><b>#kesenian</b></a><a href="https://www.youtube.com/results?search_query=%23langencerita" style="color:#000000"><b> #langencerita</b></a><a href="https://www.youtube.com/results?search_query=%23tari" style="color:#000000"><b> #tari</b></a>
+    	<p class="space"></p><a href="https://www.youtube.com/results?search_query=%23kesenian" style="color:white"><b>#kesenian</b></a><a href="https://www.youtube.com/results?search_query=%23langencerita" style="color:white"><b> #langencerita</b></a><a href="https://www.youtube.com/results?search_query=%23tari" style="color:white"><b> #tari</b></a>
 <p class="space"></p>
 <p style="padding-top:3px;">Sutradara : suhari Ratmoko, S.Pd</p>
 <p style="padding-top:3px;">Penata Tari : Dwi P</p>
@@ -428,7 +548,7 @@ Dengan tekad dan semangat kebersamaan, Demang Cilik bersama warga berhasil mengu
   <h4>Sekolah #3</h4>
   <p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 <p>💲 Donasi Bisa klik link dibawah ini / Scan Barcode dilayar live 💲 :</p>
-<h4>( Saweria Ernesto ) :https://saweria.co/garammanis</a> </h4>
+<h4>( Saweria Ernesto ) :https://saweria.co/garammanis</a> </h4><p>
 ( Saweria Saudara ) : dukung di https://saweria.co/PEKALOGAMING
 |▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🎮 Game yang dimainkan : Google Meet
@@ -438,15 +558,15 @@ Dengan tekad dan semangat kebersamaan, Demang Cilik bersama warga berhasil mengu
 |▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔹Music :
 🔗Link : -
-<p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|</p>
+|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔻 Media Sosial🔻
 🔹link discord      : Ernesto1403# 9537 , https://discord.gg/ddmVDGcES4
 🔹link Instagram : @Ernesto yoofi , https://www.instagram.com/yoofi.ernesto/
 🔹 Tik Tok : Ernesto.yoofi_1403 , https://www.tiktok.com/@ernesto.yoofi_1403?lang=id-ID 
 🔹 Add Steam ya : @Ernesto.yoofi , ?
-<p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|</p>
+|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔹 Command NightBot :
-Help : [ !command ]<a href="https://www.youtube.com/watch?v=xty70yQkZOA"style="color:orange">... Baca selanjutnya</a></p>
+Help : [ !command ]</p><a href="https://www.youtube.com/watch?v=xty70yQkZOA"style="color:orange">... Baca selanjutnya</a></p>
   </div>
   <p class="space"></p>
   <!-- School 2 -->
@@ -458,7 +578,7 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=xty70yQkZOA"style="c
   <p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 <p>💲 Donasi Bisa klik link dibawah ini / Scan Barcode dilayar live 💲 :</p>
 <h4>( Saweria Ernesto ) :https://saweria.co/garammanis</a> </h4>
-( Saweria Saudara ) : dukung di https://saweria.co/PEKALOGAMING
+<p>( Saweria Saudara ) : dukung di https://saweria.co/PEKALOGAMING
 |▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🎮 Game yang dimainkan : Google Meet
 🔹Download gamenya     : 
@@ -467,15 +587,15 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=xty70yQkZOA"style="c
 |▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔹Music :
 🔗Link : -
-<p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|</p>
+|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔻 Media Sosial🔻
 🔹link discord      : Ernesto1403# 9537 , https://discord.gg/ddmVDGcES4
 🔹link Instagram : @Ernesto yoofi , https://www.instagram.com/yoofi.ernesto/
 🔹 Tik Tok : Ernesto.yoofi_1403 , https://www.tiktok.com/@ernesto.yoofi_1403?lang=id-ID 
 🔹 Add Steam ya : @Ernesto.yoofi , ?
-<p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|</p>
+|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔹 Command NightBot :
-Help : [ !command ]<a href="https://www.youtube.com/watch?v=nBGbCZgPiwc"style="color:orange">... Baca selanjutnya</a></p>
+Help : [ !command ]</p><a href="https://www.youtube.com/watch?v=nBGbCZgPiwc"style="color:orange">... Baca selanjutnya</a></p>
   </div>
   <p class="space"></p>
   <!-- School 1 -->
@@ -487,7 +607,7 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=nBGbCZgPiwc"style="c
   <p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 <p>💲 Donasi Bisa klik link dibawah ini / Scan Barcode dilayar live 💲 :</p>
 <h4>( Saweria Ernesto ) :https://saweria.co/garammanis</a> </h4>
-( Saweria Saudara ) : dukung di https://saweria.co/PEKALOGAMING
+<p>( Saweria Saudara ) : dukung di https://saweria.co/PEKALOGAMING
 |▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🎮 Game yang dimainkan : Google Meet
 🔹Download gamenya     : 
@@ -496,15 +616,15 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=nBGbCZgPiwc"style="c
 |▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔹Music :
 🔗Link : -
-<p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|</p>
+<p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔻 Media Sosial🔻
 🔹link discord      : Ernesto1403# 9537 , https://discord.gg/ddmVDGcES4
 🔹link Instagram : @Ernesto yoofi , https://www.instagram.com/yoofi.ernesto/
 🔹 Tik Tok : Ernesto.yoofi_1403 , https://www.tiktok.com/@ernesto.yoofi_1403?lang=id-ID 
 🔹 Add Steam ya : @Ernesto.yoofi , ?
-<p>|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|</p>
+|▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬|
 🔹 Command NightBot :
-Help : [ !command ]<a href="https://www.youtube.com/watch?v=74BPaL8FHz8" style="color:orange">... Baca selanjutnya</a></p>
+Help : [ !command ]</p><a href="https://www.youtube.com/watch?v=74BPaL8FHz8" style="color:orange">... Baca selanjutnya</a></p>
   </div>
   <p class="space"id="info"></p>
 </div>
@@ -559,8 +679,9 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=74BPaL8FHz8" style="
 					<li>Pembuat : @Ernesto yoofi</li>
 					<li>Rilis : 21:54:09 Wib / 14 November 2021</li>
 					<li><a href="https://ernestoyoofi.github.io/spesana7b/">Url : https://ernestoyoofi.github.io/spesana7b/</a></li>
-					<li>Versi : 1.5.4 Beta!</li>
+					<li>Versi : 1.5.5 Alpha! (Stabil)</li>
 					<li>Enviroments : <a href="https://pages.github.com">Github Pages</a>, <a href="https://search.google.com">Google Search</a></li>
+					<li>Language : Indonesia, Default html : (en) </li>
 				</ul>
 				<p style="padding: 15px;"></p>
 </div>
@@ -571,6 +692,50 @@ Help : [ !command ]<a href="https://www.youtube.com/watch?v=74BPaL8FHz8" style="
 				<a href="https://ernestoyoofi.github.io/">Powered By ernestoyoofi.github.io</a>
 				</center>
 				<p class="space"></p>
+</div>
+<!-- Navbar -->
+<div class="menu-space-low-gray">
+<p style="padding-left: 52px;padding-top: 15px;" class="bg-dark"><i class="fa fa-home bg-dark"></i> Home <b style="float:right; padding-right: 9px; font-weight: normal;" id="time-clock"><i class="fa fa-spinner"></i> Loading Clock Time...</b></p><body onload="startTime()">
+<script src="https://ernestoyoofi.github.io/script/clock time.js"></script>
+</div>
+<div class="main-menu-low-gray">
+<ul>
+<section class="links">
+<li class="menu-item"><i class="fa fa-bars"></i> Menu</li>
+<hr>
+</section>
+<section class="home">
+<li class="menu-item"><center>Pages :</center></li>
+<hr>
+</section>
+<section class="social">
+<li class="menu-item" style="background-color: rgba(0, 89, 255, 0.25);"><a style="color:aqua;"><i class="fa fa-home"></i></i>Home</a></li>
+<a href="search.html"><li class="menu-item"><i class="fa fa-search"></i>Searching</li></a>
+<a href="buku.html"><li class="menu-item"><i class="fa fa-book"></i>Buku</li></a>
+<a href="informasi.html"><li class="menu-item"><i class="fa fa-info" aria-hidden="true"></i>Informasi</li></a>
+<a href="jadwal.html"><li class="menu-item"><i class="fa fa-calendar"></i> Jadwal</li></a>
+<a href="pertanyaan.html"><li class="menu-item"><i class="fa fa-commenting"></i> Pertanyaan</li></a>
+<a href="murid.html"><li class="menu-item"><i class="fa fa-users"></i> Siswa Siswi & Guru</li></a>
+<a href=""><li class="menu-item"><i class="fa fa-image"></i> Gallery</li></a>
+<hr>
+<section class="home">
+<li class="menu-item"><center>Other :</center></li>
+<hr>
+</section>
+<a href="setting.html"><li class="menu-item"><i class="fa fa-gear"></i> Settings</li></a>
+<a href=""><li class="menu-item"><i class="fa fa-paper-plane"></i> Contact Me</li></a>
+<a href="https://github.com/ernestoyoofi/spesana/wiki"><li class="menu-item"><i class="fa fa-commenting-o"></i> Faq</li></a>
+<a href="https://ernestoyoofi.github.io/file/kalender"><li class="menu-item"><i class="fa fa-calendar"></i><script src="https://ernestoyoofi.github.io/script/days script.js"></script></li></a>
+<hr>
+<section class="home">
+<li class="menu-item"><center>Copyright :</center></li>
+</section>
+<hr>
+<li style="padding-top: 5px;"><center>©Spesana 2021</center>
+</li>
+</section>
+<p> </p>
+</ul>
 </div>
 </body>
 </html>
