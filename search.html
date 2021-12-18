@@ -32,8 +32,7 @@
 }
 body a {
   text-decoration: none;
-  color:white;
-}
+  color:white;}
 body {
   font-family: Unispace, Helvetica, sans-serif;
 	 font-size: 14px;
@@ -80,6 +79,7 @@ hr {
 		background-color: #fff;
 		border-radius: 0px;
 		center:0;
+		max-width: 700px;
 		shadow-box:
   12.5px 12.5px 10px rgba(0, 0, 0, 0.145),
   100px 100px 80px rgba(0, 0, 0, 0.18);
@@ -157,14 +157,105 @@ hr {
   padding: 2px;
   text-decoration: none;
   color: black;
-  display: block;
+  display: block;}
+.center-box {
+  margin: auto;
+  padding: auto;
+  width: 95%;
+  max-width: 700px;
+  height: 100%; }.main-menu-low-gray{
+  backdrop-filter: blur(8px);
+  background-color: rgba(71, 71, 71, 0.25);
+  border-top-right-radius: 0px; 
+  border-bottom-right-radius: 0px;
+  border-right: 1px solid gray;
+  width: 42px; 
+  height: 42px; 
+  position: fixed; 
+  top:0; 
+  left:0;
+  overflow-x: hidden; 
+  overflow-y: hidden; 
+  white-space: nowrap;
+  transition: .5s ease;
+}
+.main-menu-low-gray:hover { 
+  width : 267px;
+  height : 100%;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 2px, rgba(0, 0, 0, 0.23) 0px 3px 3px, rgba(0, 0, 0, 0.16) 0px 3px 5px, rgba(0, 0, 0, 0.23) 0px 3px 8px;
+} 
+.main-menu-low-gray
+.menu-item { 
+  padding: 10px;
+}
+.main-menu-low-gray
+.menu-item:hover{
+  background-color: rgba( 120, 120, 120, 0.3); 
+  cursor: pointer;
+}
+.animations {
+  transition: 0.5s ease;
+}
+.animations:hover {
+  animation-name: example;
+  animation-duration: 12s;
+  animation-delay: 5s;
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+.main-menu-low-gray
+.menu-item 
+.fa{ 
+  color: white; 
+  width: 45px; 
+  font-size: 18px;
+  padding: 2px;
+} 
+.main-menu-low-gray
+.menu-item:hover
+.fa{ #
+  color: #1d0daa;
+}
+section.home{ 
+  background-color: #f3f3f3;
+} 
+  ::-webkit-scrollbar { 
+  width: 5px;
+}
+  ::-webkit-scrollbar-track { 
+  background: transparent !important;
+} 
+  ::-webkit-scrollbar-thumb { 
+  background: #bbbbbb; 
+  border-radius: 10px;
+}
+.menu-space-low-gray{
+  backdrop-filter: blur(8px);
+  position: fixed;
+  background-color: rgba(71, 71, 71, 0.25);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  border-botton: 1px solid orange;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 2px, rgba(0, 0, 0, 0.23) 0px 3px 3px, rgba(0, 0, 0, 0.16) 0px 3px 5px, rgba(0, 0, 0, 0.23) 0px 3px 8px;
+}
+hr {
+  background-color: gray;
+  border: 0.2px solid gray;
+  decoration: none;
 }
 </style>
 <head>
 				<!-- Bar Menu -->
 <div class="navbar">
 				<!-- Menu -->
-  <div class="dropdown">
+  <!-- <div class="dropdown">
     <button class="dropbtn" style="background-color:#82acff;">Searching Page 
       <i class="fa fa-caret-down"></i>
     </button>
@@ -179,11 +270,11 @@ hr {
       <a href="https://ernestoyoofi.github.io/send-bug" style="color:white">Report Bug</a>
       <a href="upload.html" style="color:white">Upload Files</a>
       <a href="pertanyaan.html">Pertanyaan</a>
-    </div>
+    </div> -->
     
   </div>
   <!-- Kelas -->
-    <div class="dropdown">
+    <!-- <div class="dropdown">
     <button class="dropbtn">Tag Bar
       <i class="fa fa-caret-down"></i>
     </button>
@@ -194,7 +285,7 @@ hr {
       <a href="#siswa" style="color:white">Siswa</a>
     </div>
     </div>
-</div>
+</div> -->
 <div class="dasboard">
 				<!-- url text -->
 		<p class="space"></p>
@@ -483,6 +574,7 @@ hr {
 </div>
 <hr id="info">
 <div class="about">
+				<div class="center-box">
 				<b style="padding-left: 15px;">Terimakasih Untuk Supportnya</b><p style="padding: 3px;"></p>
 				<hr class="hr-c padding-left-tree"><p style="padding: 3px;"></p>
 				<ul style="padding-left:5px; list-style-type:none;">
@@ -537,7 +629,7 @@ hr {
 					<li>Enviroments : <a href="https://pages.github.com">Github Pages</a>, <a href="https://search.google.com">Google Search</a></li>
 				</ul>
 				<p style="padding: 15px;"></p>
-</div>
+</div></div>
 <div class="end-page">
 				<p class="space"></p>
 				<center>
@@ -546,5 +638,41 @@ hr {
 				</center>
 				<p class="space"></p>
 </div>
+<!-- Navbar -->
+<div class="menu-space-low-gray">
+<p style="padding-left: 52px;padding-top: 15px;" class="bg-dark"><i class="fa fa-home bg-dark"></i> Home <b style="float:right; padding-right: 9px; font-weight: normal;" id="time-clock"><i class="fa fa-spinner"></i> Loading Clock Time...</b></p><body onload="startTime()">
+<script src="https://ernestoyoofi.github.io/script/clock time.js"></script>
+</div>
+<div class="main-menu-low-gray">
+<ul>
+<section class="links">
+<li class="menu-item"><i class="fa fa-bars"></i> Menu</li>
+<hr>
+</section>
+<section>
+<li class="menu-item"><center>Pages :</center></li>
+<hr>
+</section>
+<section class="social">
+<li class="menu-item"><a href="index.html"><i class="fa fa-home"></i></i>Home</a></li>
+<a style="color:aqua;"><li class="menu-item" style="background-color: rgba(0, 89, 255, 0.25);"><i class="fa fa-search"></i>Searching</li></a>
+<a href="buku.html"><li class="menu-item"><i class="fa fa-book"></i>Buku</li></a>
+<a href="informasi.html"><li class="menu-item"><i class="fa fa-info" aria-hidden="true"></i>Informasi</li></a>
+<a href="jadwal.html"><li class="menu-item"><i class="fa fa-calendar"></i> Jadwal</li></a>
+<a href="pertanyaan.html"><li class="menu-item"><i class="fa fa-commenting"></i> Pertanyaan</li></a>
+<a href="murid.html"><li class="menu-item"><i class="fa fa-users"></i> Siswa Siswi & Guru</li></a>
+<a href="folder.html"><li class="menu-item"><i class="fa fa-cube"></i> Gallery & Karya</li></a>
+<hr>
+<section>
+<li class="menu-item"><center>Other :</center></li>
+<hr>
+<a href="https://www.instagram.com/Spesana24B"><li class="menu-item"><i class="fa fa-instagram"></i> Instagram</li></a>
+<span onclick="console.clear()"><li class="menu-item"><i class="fa fa-clear"></i> Clear Console Log</li></span>
+</section>
+<hr>
+<p> </p>
+</ul>
+</div>
+<script> function copyEvent(id) { var str = document.getElementById(id);      window.getSelection().selectAllChildren(str);  document.execCommand("Copy"); alert(" Teks Telah Disalin ");  }</script>
 </head>
 </html>
