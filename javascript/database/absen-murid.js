@@ -1,6 +1,6 @@
 /* ====== [ Jumlah Siswa Siswi Dan Data ] ====== */
-
-document.getElementById("java-load").innerHTML = "<b style='font-style: normal;font-weight: normal; background-color: #00b04b; padding: 3px; border-radius: 3px;'>Database Telah Terbaca <i class='fa fa-check load'></i></b>";
+document.getElementById("java-load").innerHTML = "<b style='font-style: normal;font-weight: normal; background-color: #ff7300; padding: 3px; border-radius: 3px;'>Database Sedang Dalam Update <i class='fa fa-refresh infinite-load'></i></b>";
+/*document.getElementById("java-load").innerHTML = "<b style='font-style: normal;font-weight: normal; background-color: #00b04b; padding: 3px; border-radius: 3px;'>Database Telah Terbaca <i class='fa fa-check load'></i></b>";*/
 document.getElementById("jumlah-murid").innerHTML = "32";
 document.getElementById("jumlah-siswa").innerHTML = "12";
 document.getElementById("jumlah-siswi").innerHTML = "20";
