@@ -70,7 +70,7 @@ document.getElementById("nama-28").innerHTML = "Stefanus Angga Krismawan";
 document.getElementById("nama-29").innerHTML = "Stefanus Yudistira Putra Christianto";
 document.getElementById("nama-30").innerHTML = "Veronika Yulia Briliana";
 document.getElementById("nama-31").innerHTML = "Vironika yulianti";
-document.getElementById("nama-32").innerHTML = "Yosep ghanny deron emmanuel";
+document.getElementById("nama-32").innerHTML = "Yosep Ghanny Deron Emmanuel";
 /* ====== [ L/P ] ====== */
 document.getElementById("lp-1").innerHTML = "P";
 document.getElementById("lp-2").innerHTML = "P";
