@@ -1,0 +1,2 @@
+/*Category*/document.getElementById("category-1").innerHTML = "Sekolah"; document.getElementById("category-2").innerHTML = "Siswa Siswi SMPN 1 Nanggulan";document.getElementById("category-3").innerHTML = "Website Siswa Siswi SMPN 1 Nanggulan";
+/*Tags*/document.getElementById("tag-1").innerHTML = "Spesana"; document.getElementById("tag-2").innerHTML = "Spesana 24b"; document.getElementById("tag-3").innerHTML = "Spesana 7B";
