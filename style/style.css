@@ -212,7 +212,7 @@ a {
 }
 .card {
 	width: 94%;
-	height: auto;
+	height: 100%;
 	border-radius: 2px;
 	border: 1px solid #e8e8e8;
 }
@@ -325,7 +325,7 @@ input[type=search] {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-top: 56.25%;
 }
 .embed-item {
   position: absolute;
@@ -348,13 +348,13 @@ input[type=search] {
 .right-end {
   float: right;
   top: 0;
-  width: 33.3%; /* The width is 20%, by default */
+  width: 33.3%;
 }
 
 .main-end {
  margin: auto;
  top: 0;
-  width: 33.3%; /* The width is 60%, by default */
+ width: 33.3%;
 }
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 600px) {
