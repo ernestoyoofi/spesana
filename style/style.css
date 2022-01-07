@@ -244,7 +244,7 @@ a {
 }
 .embed-covid-19 {
 	width: 94%;
-	height: auto;
+	height: 100%;
 	border: 1px solid #006cff;
 }
 .embed-covid-19 .description {
@@ -350,7 +350,9 @@ input[type=search] {
   top: 0;
   width: 33.3%;
 }
-
+.main-end, .right-end, .left-end {
+	height: 100%;
+}
 .main-end {
  margin: auto;
  top: 0;
