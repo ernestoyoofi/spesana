@@ -14,14 +14,6 @@ function  SorryDisableBtn() {
 document.getElementById("pop-up-error-content").innerHTML = TextERRPages ;
  console.error( TextERRPages );
 }
-function ShowTentangKami() {
- var ShowTentangKami = document.getElementById("TentangKami");
- if(ShowTentangKami.style.display === "none") {
-								ShowTentangKami.style.display = "inline";
-				}else {
-								ShowTentangKami.style.display = "none";
- }
-}
 function ShowAPISpesana() {
  var ShowAPISpesana = document.getElementById("APISpesana");
  if(ShowAPISpesana.style.display === "none") {
