@@ -225,8 +225,15 @@ a {
 .card .description .space-text {
 	margin: 7px;
 }
+.card .description .intal {
+	font-size: 12px;
+}
 .card .description .status {
 	font-size: 10px;
+}
+.card .description .status a {
+	font-size: 10px;
+	color: blue;
 }
 .card .description button {
 	font-size: 10px;
