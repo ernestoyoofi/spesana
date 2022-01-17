@@ -1,0 +1,86 @@
+* {
+ padding: 0;
+ margin: 0;
+ font-size: 14px;
+}
+html {
+ scroll-behavior: smooth;
+}
+body {
+	scroll-behavior: smooth;
+}
+body { 
+ background-color: white;
+ font-family: 'Fira Sans', sans-serif;; 
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+.space { padding-top: 3px; }
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #e8e8e8;
+}
+.copyright {
+	width: 100%;
+	background-color: #e8e8e8;
+	bottom: 0;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+nav .btn-nav {
+	margin: 9px;
+}
+nav .btn-nav a {
+	margin-right: 13px;
+	font-size: 14px;
+}
+.responsive {
+	width: 100%;
+	max-width: 720px;
+}
+.center { margin: auto; }
+.over-auto {
+	overflow: auto;
+}
+.card {
+	width: 95%;
+	background-color: #f7f7f7;
+	border-radius: 4px;
+	box-shadow: rgba(0,0,0,0.20) 1px 1px 2px;
+	margin-bottom: 6px;
+}
+.card-no-property {
+	width: 95%;
+	margin-bottom: 6px;
+}
+.card .text {
+	padding: 8px;
+}
+.card .text .tag {
+	font-size: 12px;
+	color: gray;
+}
+.card .text .p-profil {
+	width: 70px;
+	height: 70px;
+	float: right;
+	border-radius: 50%;
+	border: 1px solid #dcdcdc;
+}
+.card .text .about {
+	margin-top: 9px;
+}
+.card .text .about h4 {
+	font-weight: normal;
+}
+.card .text .about ,a ,i{
+	font-size: 12px;
+}
+.card .text .about i{
+	width: 15px;
+}
