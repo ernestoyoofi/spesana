@@ -13,7 +13,7 @@ function CloseSendEmail() {
 				document.getElementById("display-email").style.marginTop = "-500px";
 }
 function SendMassage() {
-				var User = "akuyetta2@gmail.com"
+				var User = "astuticatarina8@gmail.com"
 				var YourEmail = document.getElementById("your-email").value;
 				var Subject = document.getElementById("subject-text").value;
 				var Text = document.getElementById("text-area").value;
