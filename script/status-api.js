@@ -1,4 +1,4 @@
-var StatusAPI = "Error"; var Informasi = 'Selasa 11 Januari 2022 / 13:22 ( Status Dapat Diupdate Tetapi Terbatalkan Karena Pemadaman Listrik Didaerah "Jl, Nanggulan Mendut, Kalibawang, Dekso, Kulonprogo, Jogyakarta, Jawa Tengah" Selama 1 Jam 27 Menit 4 Detik [ Pada Pukul : 13:21:45 / 11 Januari 2022 / WIB ] Dan Dapat Diupdate Pukul 14:49:59 )';
+var StatusAPI = "Error"; var Informasi = 'Jumat 21 Januari 2022 / 11:12';
 document.getElementById("status-api").innerHTML = "<p style='color: #ff000a'>" + StatusAPI + "</p>"; document.getElementById("status-protokol").innerHTML = "<p style='color: #7aea3b'>Telah Ditetapkan</p>"; document.getElementById("status-murid").innerHTML = "<p style='color: #ff9d00'>Dibagi Menjadi 2 Shift ( Pagi Dan Siang ) 50%</p>";	 document.getElementById("terakhir-diupdate-api").innerHTML = "Terakhir Update : " + Informasi + "";
 function GetStatusAPISpesana() {
   if (confirm("Apakah Kamu Ingin Cek Status API Kami Diconsole? ")) {
