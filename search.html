@@ -68,8 +68,122 @@
 				<script src="script/status-api.js"></script>
 				<!-- Starting Card -->
 				<p class="space"></p>
-				
+				<div class="card center bg-white-or sm-shadow">
+								<input type="search" id="InputSearch" onkeyup="mySearch()" placeholder="Searching..." title="Type in a name" name="search">
+								<div class="description">
+								<a id="searching-results" class="status"></a>
+								|
+								<a onclick="UlangiPencarian()" class="status">Ulangi Pencarian</a>
+								|
+								<a onclick="document.getElementById('InputSearch').value = '#'; document.getElementById('myUL').style.display = 'inline'" class="status">Perlihatkan Semua List Pencarian</a>
+								</div>
+				</div>
+				<p class="space"></p>
+				<ul id="myUL" class="d-none">
+								<!-- 1 -->
+					  <li>
+					  				<div class="card center bg-white-or sm-shadow">
+					  								<a href="https://ernestoyoofi.github.io/spesana/?search=index">
+					  												<div class="description">
+					  																<b>Homes | Spesana 7B ( Semester 2 )</b>
+					  																<p class="status">Website Resmi Siswa Siswi SMPN 1 Nanggulan 2021-2024</p>
+					  																<p class="status c-gray">https://ernestoyoofi.github.io/spesana/?search=index</p>
+					  																<p class="d-none">#allpages #home #index #gallery #informasi #kabarberita</p>
+					  												</div>
+					  								</a>
+					  				</div>
+					  </li>
+					  <!-- 2 -->
+					  <li>
+					  				<div class="card center bg-white-or sm-shadow">
+					  								<a href="https://ernestoyoofi.github.io/spesana/informasi?search=informasi">
+					  												<div class="description">
+					  																<b>Informasi | Spesana 7B ( Semester 2 )</b>
+					  																<p class="status">Website Resmi Siswa Siswi SMPN 1 Nanggulan 2021-2024</p>
+					  																<p class="status c-gray">https://ernestoyoofi.github.io/spesana/informasi?search=informasi</p>
+					  																<p class="d-none">#allpages #informasi</p>
+					  												</div>
+					  								</a>
+					  				</div>
+					  </li>
+					  <!-- 3 -->
+					  <li>
+					  				<div class="card center bg-white-or sm-shadow">
+					  								<a href="">
+					  												<div class="description">
+					  																<b>Buku | Spesana 7B ( Semester 2 )</b>
+					  																<p class="status">Website Resmi Siswa Siswi SMPN 1 Nanggulan 2021-2024</p>
+					  																<p class="status c-gray">https://ernestoyoofi.github.io/spesana/buku?search=buku</p>
+					  																<p class="d-none">#allpages #buku</p>
+					  												</div>
+					  								</a>
+					  				</div>
+					  </li>
+					  <!-- 4 -->
+					  <li>
+					  				<div class="card center bg-white-or sm-shadow">
+					  								<a href="https://ernestoyoofi.github.io/spesana/gallery?search=gallery">
+					  												<div class="description">
+					  																<b>Gallery | Spesana 7B ( Semester 2 )</b>
+					  																<p class="status">Resmi Siswa Siswi SMPN 1 Nanggulan 2021-2024</p>
+					  																<p class="status c-gray">https://ernestoyoofi.github.io/spesana/gallery?search=gallery</p>
+					  																<p class="d-none">#allpages #gallery</p>
+					  												</div>
+					  								</a>
+					  				</div>
+					  </li>
+					  <!-- 5 -->
+					  <li>
+					  				<div class="card center bg-white-or sm-shadow">
+					  								<a href="https://ernestoyoofi.github.io/spesana/jadwal">
+					  												<div class="description">
+					  																<b>Jadwal | Spesana 7B ( Semester 2 )</b>
+					  																<p class="status">Website Resmi Siswa Siswi SMPN 1 Nanggulan 2021-2024</p>
+					  																<p class="status c-gray">https://ernestoyoofi.github.io/spesana/jadwal</p>
+					  																<p class="d-none">#allpages #jadwal</p>
+					  												</div>
+					  								</a>
+					  				</div>
+					  </li>
+					  <!-- 6 -->
+					  <li>
+					  				<div class="card center bg-white-or sm-shadow">
+					  								<a href="">
+					  												<div class="description">
+					  																<b></b>
+					  																<p class="status"></p>
+					  																<p class="status c-gray"></p>
+					  												</div>
+					  								</a>
+					  				</div>
+					  </li>
+					  <!-- 7 -->
+					  <li>
+					  				<div class="card center bg-white-or sm-shadow">
+					  								<a href="https://www.smpn1nanggulan.sch.id/">
+					  												<div class="description">
+					  																<b>SMP Negeri 1 Nanggulan</b>
+					  																<p class="status">Website Resmi SMP Negeri 1 Nanggulan Kulon Progo Yogyakarta.</p>
+					  																<p class="status c-gray">https://www.smpn1nanggulan.sch.id/ ( ask permission to use search query )</p>
+					  												</div>
+					  								</a>
+					  				</div>
+					  </li>
+					  <!-- 8 -->
+					  <li>
+					  				<div class="card center bg-white-or sm-shadow">
+					  								<a href="https://www.smpn1nanggulan.sch.id/read/109/kreativitas-tanpa-batas">
+					  												<div class="description">
+					  																<b>KREATIVITAS TANPA BATAS | SMP Negeri 1 Nanggulan</b>
+					  																<p class="status">Website Resmi SMP Negeri 1 Nanggulan Kulon Progo Yogyakarta.</p>
+					  																<p class="status c-gray">http://www.smpn1nanggulan.sch.id/read/109/kreativitas-tanpa-batas</p>
+					  												</div>
+					  								</a>
+					  				</div>
+					  </li>
+				</ul>
 </div>
+<script src="script/search.js"></script>
 <p class="space"></p>
 				<div class="copyright">
 								<div class="responsive">
