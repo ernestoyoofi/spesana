@@ -14,8 +14,8 @@ Website Resmi SMP N 1 Nanggulan Siswa Kelas 7B 2021-2022
 
 # Acconts / Portfolio / Student Card
 - [Ernestoyoofi](https://ernestoyoofi.github.io/spesana/card-student/ernestoyoofi/)
-     - [Document](https://ernestoyoofi.github.io/spesana/card-student/ernestoyoofi/dokument.html)
-          -[Menelaah Bahasa Teks Prosedur #Bahasaindonesia](https://ernestoyoofi.github.io/spesana/card-student/ernestoyoofi/dokument/Menelaah-Bahasa-Teks-Prosedur)
+   - [Document :](https://ernestoyoofi.github.io/spesana/card-student/ernestoyoofi/dokument.html)
+   - [» Menelaah Bahasa Teks Prosedur #Bahasaindonesia](https://ernestoyoofi.github.io/spesana/card-student/ernestoyoofi/dokument/Menelaah-Bahasa-Teks-Prosedur)
 - [Yosep Ghanny](https://ernestoyoofi.github.io/spesana/card-student/yosepghanny)
 
 # API Spesana
