@@ -195,6 +195,15 @@ a {
  background-color: #ff1f00;
  color: white;
 }
+.c-red {
+ color: red;
+}
+.c-blue {
+ color: blue;
+}
+.c-gray {
+	color: gray;
+}
 .sm-shadow {
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px, rgba(0, 0, 0, 0.15) 1px 1px 2.6px;
 }
@@ -334,8 +343,26 @@ img {
 input[type=search] {
 	padding: 5px;
  left: 3px;
- width: 190px;
+ width: 100%;
+ height: 27px;
  border: none;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#add {
+	background-color: #005edd;
+	float: none;
+ padding: 6px;
+	color: white;
+	background-color: #006cff;
+	box-shadow: rgba(0, 0, 0, 0.30) 1.0px 1.0px 1.4px;
+	border: none;
+}
+#add i {
+	font-size: 11px;
 }
 .menu-link button {
 	padding: 4px;
@@ -361,6 +388,25 @@ input[type=search] {
   width: 100%;
   height: 100%;
 }
+/* CSS Costume API*/
+.jadwal {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+}
+.jadwal td, th {
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.jadwal .tanggal{
+	background-color: #f2f2f2;
+}
+.kelas {
+ background-color: #eeeeee;
+}
+/**/
 .copyright {
 	background-color: #ececec;
 	padding: 4px;
