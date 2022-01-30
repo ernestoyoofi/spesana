@@ -3,6 +3,9 @@
 Selamat Datang Diwebsite Spesana (7B) 
 Website Resmi SMP N 1 Nanggulan Siswa Kelas 7B 2021-2022
 
+# Update
+ - ⚠ Update Telah Berlangsung Pada Pukul 17:10 30 Jan 2022
+
 # URL 
  - [spesana-nanggulan.vercel.app](https://spesana-nanggulan.vercel.app/)
  - [ernestoyoofi.github.io/spesana/](https://ernestoyoofi.github.io/spesana/)
