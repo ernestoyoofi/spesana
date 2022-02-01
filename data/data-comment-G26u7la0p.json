@@ -1,10 +1,12 @@
 [
   {
-    "name" : "example",
-    "text" : "hmmmm"
+    "name":"Ernesto Yoofi",
+    "text":"hmmmm", 
+    "date":"Selasa, 1 Febuari 2022"
   },
   {
-    "name" : "ernestoyoofi",
-    "text": "test"
+    "name" : "Spesana API",
+    "text": "Jika ngak bisa komentar, bisa tambahin di<a>sini</a> dan minta Pull requests",
+    "date":"Selasa, 1 Febuari 2022"
   }
 ]
