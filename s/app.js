@@ -1,4 +1,4 @@
-window.location.href = "https://storage-spesana.vercel.app/s/";
+
 function Start() {
   console.log("Starting")
   var Name = document.getElementById("file").value;
