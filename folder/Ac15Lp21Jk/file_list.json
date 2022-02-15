@@ -3,12 +3,14 @@
     "base_url" : "https://storage-spesana.vercel.app/Ac15Lp21Jk/",
     "file" : [
         {
-            "name" : "test",
-            "file" : "test"
+            "name" : "Text Prosedur Cara Membuat Wedang Jahe",
+            "file" : "Text Prosedur Cara Membuat Wedang Jahe.pdf",
+            "type" : "pdf"
         },
         {
-            "name" : "test1",
-            "file" : "test1"
+            "name" : "Cara Membuat Wedang Jahe",
+            "file" : "cara_membuat_wedang_jahe.mp4",
+            "type" : "video"
         }
     ]
 }
