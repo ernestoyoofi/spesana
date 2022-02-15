@@ -5,12 +5,14 @@
         {
             "name" : "Text Prosedur Cara Membuat Wedang Jahe",
             "file" : "Text Prosedur Cara Membuat Wedang Jahe.pdf",
-            "type" : "pdf"
+            "type" : "pdf",
+            "list" : "0"
         },
         {
             "name" : "Cara Membuat Wedang Jahe",
             "file" : "cara_membuat_wedang_jahe.mp4",
-            "type" : "video"
+            "type" : "video",
+            "list" : "1"
         }
     ]
 }
