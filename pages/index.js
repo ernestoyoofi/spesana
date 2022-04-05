@@ -21,6 +21,8 @@ export default function Home() {
     <div>
       <Head>
         <title>Beranda | Spesana Nanggulan</title>
+        <link rel="icon" href="https://spesana.vercel.app/favicon.ico" />
+        <meta property="og:image" href="httpe://spesana.vercel.app/gallery/praktek-ipa-penyaringan.jpg" />
         <meta name="description" content="Website Resmi Siswa Siswi SMPN 1 Nanggulan, Karya Anak Spesana, Inc."/>
       </Head>
       <Navbar />
