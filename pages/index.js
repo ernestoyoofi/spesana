@@ -49,7 +49,7 @@ export default function Home() {
                     <img src="/img/tumb/08-09-2021_yt-mqdefault.jpg" width="100%"/>
                   </div>
                   <div className={Style.content_text}>
-                    <p className={Style.content_title}>FESTIVAL LANGEN CARITA "DEMANG CILIK"</p>
+                    <p className={Style.content_title}>FESTIVAL LANGEN CARITA &quot;DEMANG CILIK&quot;</p>
                     <span className={Style.content_desc}>Sutradara : suhari Ratmoko, S.Pd Penata Tari : Dwi P Penata busana : Pelangi entertaiment DEMANG CILIK July 1904...</span>
                     <a href="/karya/festival-langen-carita-demang-cilik" className={Style.content_readlink}>Baca Selengkapnya</a>
                   </div>
