@@ -1,5 +1,3 @@
-import { Head } from "next/document";
-
 export default function handler(req, res) {
     const BASE_URL = process.env.BASE_URL || '';
     res.status(200).json(
