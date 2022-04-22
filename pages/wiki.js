@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "../comp/navbar"
 
 export default function wiki() {
-  const router = useRouter();
   
   const navbarclose = () => {
     document.getElementById("navbar").style.marginLeft = "-320px"
