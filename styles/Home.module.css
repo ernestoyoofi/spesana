@@ -148,13 +148,19 @@
 }
 
 /* ===== Content ===== */
+.nipUp {
+  padding-top: 2px;
+}
 .content_select {
   padding-top: 47px;
+  margin: auto;
 }
 .content_respon {
   max-width: 1170px;
-  width: 98%;
+  width: 100%;
   margin: auto;
+  box-sizing: border-box;
+  padding: 7px;
 }
 .content_label {
   margin-top: 34px;
@@ -170,12 +176,13 @@
 }
 .content_col_3 {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .content_col_3 .content_box {
   margin: 3px;
-  width: 32.5%;
+  width: 32.6%;
 }
 @media only screen and (max-width: 800px) {
   .content_col_3 {
@@ -258,17 +265,94 @@
 .footer .footer_respon{
   max-width: 1170px;
   width: 98%;
+  padding: 12px;
   margin: auto;
 }
 .footer .footer_full_page{
   display: inline-block;
   width: 100%;
-  padding: 12px;
-  margin: 6px;
+  padding: 6px;
   text-align: center;
+  box-sizing: border-box;
 }
 @media only screen and (max-width: 700px) {
   .footer {
     margin-bottom: 47px;
+  }
+}
+
+/* ===== Tamplate ===== */
+.tamplate {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.respon_yt_box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.respon_yt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.profile_read {
+  display: flex;
+  align-items: center;
+}
+.profile_read p {
+  font-size: 14px;
+}
+.icons_profile {
+  margin-right: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #4b66ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons_profile_img {
+  width: 100%;
+}
+.main_karya {
+  width: 100%;
+  padding: 6px;
+  box-shadow: rgba(0,0,0,0.20) 0px 0px 7px;
+  border-radius: 3px;
+}
+.karya_respon_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.karya_img_item {
+  margin: auto;
+  max-height: 450px;
+}
+.karya_img_item_vie {
+  width: 100%;
+  max-width: 500px;
+}
+@media only screen and (max-width: 360px) {
+  .karya_img_item {
+    width: 100%;
   }
 }
