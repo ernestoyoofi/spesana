@@ -37,7 +37,7 @@ export default function Home() {
                   <div className={Style.content_text}>
                     <p className={Style.content_title}>Gambar</p>
                     <span className={Style.content_desc}>-</span>
-                    <a href="/karya_gambar" className={Style.content_readlink}>Baca Selengkapnya</a>
+                    <Link href="/karya_gambar"><a href="/karya_gambar" className={Style.content_readlink}>Baca Selengkapnya</a></Link>
                   </div>
                 </div>
               </div>

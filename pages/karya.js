@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from "next/router"
 import Script from 'next/script'
 import Style from '../styles/Home.module.css'
@@ -36,7 +37,7 @@ export default function Karya() {
                   <div className={Style.content_text}>
                     <p className={Style.content_title}>Gambar</p>
                     <span className={Style.content_desc}>-</span>
-                    <a href="/karya_gambar" className={Style.content_readlink}>Baca Selengkapnya</a>
+                    <Link href="/karya_gambar"><a href="/karya_gambar" className={Style.content_readlink}>Baca Selengkapnya</a></Link>
                   </div>
                 </div>
               </div>
