@@ -21,8 +21,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Beranda | Spesana Nanggulan</title>
-        <link rel="icon" href="https://spesana.vercel.app/favicon.ico" />
-        <meta property="og:image" href="httpe://spesana.vercel.app/gallery/praktek-ipa-penyaringan.jpg" />
         <meta name="description" content="Website Resmi Siswa Siswi SMPN 1 Nanggulan, Karya Anak Spesana, Inc."/>
       </Head>
       <Navbar />
@@ -34,12 +32,12 @@ export default function Home() {
               <div className={Style.content_box}>
                 <div className={Style.content_cardpost}>
                   <div className={Style.content_img}>
-                    <img src="/img/tumb/18-08-2021_yt-hddefault.jpg" width="100%"/>
+                    <img src="/img/tumb/22-04-2022_wa-images-gambar.jpg" width="100%"/>
                   </div>
                   <div className={Style.content_text}>
-                    <p className={Style.content_title}>Alaramku Mendisiplinkanku</p>
-                    <span className={Style.content_desc}>Sebuah komitmen dalam teks deskripsi</span>
-                    <a href="/karya/alarmku-mendisiplinkanku" className={Style.content_readlink}>Baca Selengkapnya</a>
+                    <p className={Style.content_title}>Gambar</p>
+                    <span className={Style.content_desc}>-</span>
+                    <a href="/karya_gambar" className={Style.content_readlink}>Baca Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -51,7 +49,7 @@ export default function Home() {
                   <div className={Style.content_text}>
                     <p className={Style.content_title}>FESTIVAL LANGEN CARITA &quot;DEMANG CILIK&quot;</p>
                     <span className={Style.content_desc}>Sutradara : suhari Ratmoko, S.Pd Penata Tari : Dwi P Penata busana : Pelangi entertaiment DEMANG CILIK July 1904...</span>
-                    <a href="/karya/festival-langen-carita-demang-cilik" className={Style.content_readlink}>Baca Selengkapnya</a>
+                    <a href="/karya_festival-langen-carita-demang-cilik" className={Style.content_readlink}>Baca Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -63,7 +61,19 @@ export default function Home() {
                   <div className={Style.content_text}>
                     <p className={Style.content_title}>Kreativitas Tanpa Batas</p>
                     <span className={Style.content_desc}>Bumi sebagai tempat hidup segala makhluk harus kita rawat dan jaga agar senantiasa asri dan sehat. Bumiku adalah ru...</span>
-                    <a href="/karya/kreativitas-tanpa-batas" className={Style.content_readlink}>Baca Selengkapnya</a>
+                    <a href="/karya_kreativitas-tanpa-batas" className={Style.content_readlink}>Baca Selengkapnya</a>
+                  </div>
+                </div>
+              </div>
+              <div className={Style.content_box}>
+                <div className={Style.content_cardpost}>
+                  <div className={Style.content_img}>
+                    <img src="/img/tumb/18-08-2021_yt-hddefault.jpg" width="100%"/>
+                  </div>
+                  <div className={Style.content_text}>
+                    <p className={Style.content_title}>Alaramku Mendisiplinkanku</p>
+                    <span className={Style.content_desc}>Sebuah komitmen dalam teks deskripsi</span>
+                    <a href="/karya_alarmku-mendisiplinkanku" className={Style.content_readlink}>Baca Selengkapnya</a>
                   </div>
                 </div>
               </div>
@@ -113,30 +123,6 @@ export default function Home() {
           <div className={Style.content_label}>
             <span className={Style.content_label_text}>Wiki</span>
             <div className={Style.content_col_3}>
-              <div className={Style.content_box}>
-                <div className={Style.content_cardpost}>
-                  <div className={Style.content_img}>
-                    <img src="" width="100%"/>
-                  </div>
-                  <div className={Style.content_text}>
-                    <p className={Style.content_title}></p>
-                    <span className={Style.content_desc}></span>
-                    <a href="" className={Style.content_readlink}>Lihat Selengkapnya</a>
-                  </div>
-                </div>
-              </div>
-              <div className={Style.content_box}>
-                <div className={Style.content_cardpost}>
-                  <div className={Style.content_img}>
-                    <img src="" width="100%"/>
-                  </div>
-                  <div className={Style.content_text}>
-                    <p className={Style.content_title}></p>
-                    <span className={Style.content_desc}></span>
-                    <a href="" className={Style.content_readlink}>Lihat Selengkapnya</a>
-                  </div>
-                </div>
-              </div>
               <div className={Style.content_box}>
                 <div className={Style.content_cardpost}>
                   <div className={Style.content_img}>

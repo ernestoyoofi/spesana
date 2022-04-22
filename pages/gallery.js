@@ -7,7 +7,7 @@ import { faHome, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "../comp/navbar"
 
-export default function Karya() {
+export default function gallery() {
   const router = useRouter();
   
   const navbarclose = () => {

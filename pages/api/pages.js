@@ -15,14 +15,12 @@ export default function handler(req, res) {
                             desc : null,
                             idContent : '12C031',
                             tgl : '',
-                            url : ''
                         },
                         {
                             name : 'Praktek IPA',
                             desc : null,
                             idContent : '12C001',
                             tgl : '',
-                            url : `${BASE_URL}/gallery/praktek-ipa`
                         }
                     ]
                 },
@@ -30,6 +28,13 @@ export default function handler(req, res) {
                     name : `Karya`,
                     pageUrl : `${BASE_URL}/karya`,
                     value : [
+                        {
+                            name : 'Gambar',
+                            desc : '-',
+                            idContent : '12C056',
+                            tgl : 'Jumat, 22 April 2022',
+                            url : `${BASE_URL}/karya/alaramku-mendisiplinkanku`
+                        },
                         {
                             name : 'Alaramku Mendisiplinkanku',
                             desc : 'Sebuah komitmen dalam teks deskripsi',
@@ -45,7 +50,7 @@ export default function handler(req, res) {
                             url : `${BASE_URL}/karya/kreativitas-tanpa-batas`
                         },
                         {
-                            name : 'FESTIVAL LANGEN CARITA "DEMANG CILIK"',
+                            name : 'FESTIVAL LANGEN CARITA &quot;DEMANG CILIK&quot;',
                             desc : 'Sutradara : suhari Ratmoko, S.Pd Penata Tari : Dwi P Penata busana : Pelangi entertaiment DEMANG CILIK July 1904, Berawal ketika K....',
                             idContent : '12C041',
                             tgl : 'Kamis, 7 Oktober 2021',
