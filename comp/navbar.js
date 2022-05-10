@@ -17,8 +17,8 @@ const Footer = () => {
             <Link href="/">
               <a href="/">Beranda</a>
             </Link>
-            <Link href="/dokument">
-              <a href="/dokument">Dokument</a>
+            <Link href="/perpustakaan">
+              <a href="/perpustakaan">Perpustakaan</a>
             </Link>
             <Link href="/wiki">
               <a href="/wiki">Wiki</a>
@@ -40,8 +40,8 @@ const Footer = () => {
             <Link href="/">
               <a href="/" title="Beranda"><FontAwesomeIcon icon={faHome} className={Style.icon} /></a>
             </Link>
-            <Link href="/dokument">
-              <a href="/dokument" title="Dokument"><FontAwesomeIcon icon={faBook} className={Style.icon} /></a>
+            <Link href="/perpustakaan">
+              <a href="/perpustakaan" title="Perpustakaan"><FontAwesomeIcon icon={faBook} className={Style.icon} /></a>
             </Link>
             <Link href="/wiki">
               <a href="/wiki" title="Wiki"><FontAwesomeIcon icon={faBookOpen} className={Style.icon} /></a>
