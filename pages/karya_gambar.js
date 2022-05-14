@@ -46,6 +46,11 @@ export default function Karya() {
               <img src="/img/contents/wa-images-gambar.jpg" className={Style.karya_img_item} />
             </div>
           </article>
+          <div style={{
+            marginTop: '20px'
+          }}>
+            <iframe src="https://comments.ernestoyoofi.repl.co/chat?host=spesana-vercel-app&amp;filepath=/karya_gambar" style={{width: '100%', height: '400px', border: 'none', outline: 'none'}} className={Style.comment_box}></iframe>
+          </div>
         </div>
       </main>
       <Footer />
