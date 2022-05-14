@@ -49,7 +49,7 @@ export default function Karya() {
           <div style={{
             marginTop: '20px'
           }}>
-            <iframe src="https://comments.ernestoyoofi.repl.co/chat?host=spesana-vercel-app&amp;filepath=/karya_gambar" style={{width: '100%', height: '400px', border: 'none', outline: 'none'}} className={Style.comment_box}></iframe>
+            <iframe src="https://comments.ernestoyoofi.repl.co/chat?host=spesana-vercel-app&amp;filepath=/karya_gambar" style={{width: '100%', height: '800px', border: 'none', outline: 'none'}} className={Style.comment_box}></iframe>
           </div>
         </div>
       </main>
