@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Quicksand:wght@500;600;700&family=Roboto:wght@300;400&display=swap');
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Defaults Input & Buttons*/
+input, textarea, button, .button{
+  padding: 6px;
+  border: 1px solid transparent;
+  outline: 0px solid rgba(23,65, 55,0.3);
+  border-radius: 3px;
+  transition: .3s;
+}
+input:focus, textarea:focus, button:focus, .button:focus{
+  border: 1px solid #517fff;
+  outline: 3px solid rgba(1, 69, 255, 0.2);
+}
