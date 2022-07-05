@@ -11,7 +11,7 @@ export default function Gallery() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Gallery - Spesana Nanggulan  7B</title>
+        <title>Gallery - Spesana Nanggulan  8B</title>
         <meta name="description" content="List &amp; Kumpulan Gallery Sekolah" />
       </Head>
       <Navbar />
