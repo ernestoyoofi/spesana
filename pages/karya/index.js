@@ -8,7 +8,7 @@ export default function Karya() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Karya - Spesana Nanggulan 7B</title>
+        <title>Karya - Spesana Nanggulan 8B</title>
         <meta name="description" content="Kumpulan Karya Siswa Siswi" />
       </Head>
       <Navbar />
