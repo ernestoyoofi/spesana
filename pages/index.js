@@ -30,8 +30,8 @@ export default function Home() {
   return (
     <div className={styles.content}>
       <Head>
-        <title>Spesana Nanggulan 7B</title>
-        <meta name="description" content="Website Siswa SMPN 1 Nanggulan 7B" />
+        <title>Spesana Nanggulan 8B</title>
+        <meta name="description" content="Website Siswa SMPN 1 Nanggulan 8B" />
       </Head>
       <Navbar />
       <ScrollTop />
