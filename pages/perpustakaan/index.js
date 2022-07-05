@@ -11,7 +11,7 @@ export default function Perpustakaan() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Perpustakaan - Spesana Nanggulan 7B</title>
+        <title>Perpustakaan - Spesana Nanggulan 8B</title>
         <meta name="description" content="Perpustakaan" />
       </Head>
       <Navbar />
