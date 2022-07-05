@@ -11,7 +11,7 @@ export default function Blog() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Blog - Spesana Nanggulan 7B</title>
+        <title>Blog - Spesana Nanggulan 8B</title>
         <meta name="description" content="Kumpulan Artikel" />
       </Head>
       <Navbar />
