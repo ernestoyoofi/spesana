@@ -28,7 +28,7 @@ export default function Comp() {
                 function() {
                     ViewScroll("flex")
                 },
-                300
+                50
             );
         } else {
             document.getElementById("scrollTop").classList.add("ScrollHide")
@@ -37,7 +37,7 @@ export default function Comp() {
                 function() {
                     ViewScroll("none")
                 },
-                300
+                50
             );
         }
     }

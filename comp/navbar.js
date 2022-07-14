@@ -11,15 +11,15 @@ export default function Comp() {
   const apper = router.pathname
 
   const Navbar = () => {
-    if (document.getElementById("navbar").style.marginLeft === '-900px') {
-      document.getElementById("navbar").style.marginLeft = "0px"
+    if (document.getElementById("navbar").style.marginBottom === '-2000px') {
+      document.getElementById("navbar").style.marginBottom = "0px"
     } else {
-      document.getElementById("navbar").style.marginLeft = "-900px"
+      document.getElementById("navbar").style.marginBottom = "-2000px"
     }
   };
   useEffect(() => {
     if(router.pathname === '/search') {
-      document.getElementById("searchMinBars").value = router.query.q
+      document.getElementById("searchMinBars").value = router.query.search_name
     }
   })
     return (
@@ -37,12 +37,12 @@ export default function Comp() {
                     <Link href="/karya">Karya</Link>
                     <Link href="/blog">Blog</Link>
                     <Link href="/gallery">Gallery</Link>
-                    <Link href="/perpustakaan">Perpustakaan</Link>
+                    <Link href="/docs/">Dokument</Link>
                     <form action='/search'>
-                      <input type="text" name="q" placeholder="Cari Disini" style={{
+                      <input type="search" name="search_name" placeholder="Cari Disini" style={{
                         padding: "5px"
                       }} id="searchMinBars" />
-                      <input type="hidden" name="urlFrom" value={apper}/>
+                      <input type="hidden" name="from_url" value={apper}/>
                     </form>
                   </div>
               </div>
