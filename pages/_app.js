@@ -1,12 +1,18 @@
+/**
+* Build By    : Ernestoyoofi
+* Filetype    : _app.js
+* Time Update : 18:29 WIB / Asia/Jakarta
+* License     : MIT
+**/
 import '../styles/globals.css'
 import Head from 'next/head'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Component {...pageProps} />
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="keywords" content="Spesana, Spesana Nanggulan, SMPN 1 Nanggulan, smpn1nanggulan.sch.id"/>
         <meta name="subject" content="website pendidikan" />
         <meta name="copyright" content="Spesana" />
@@ -18,8 +24,10 @@ function MyApp({ Component, pageProps }) {
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
         <meta name="google-site-verification" content="wcC28rNmbYV1lR_OamoSTSVfx87bc4xPFDq_yZt62TA" />
-        <link rel="icon" href="/assets/image/icon.jpg" />
-        <script src='https://analytics.ernestoyoofi.repl.co/analytics.js?key=k0YNIjFlfZRVspzWcTM2vg94UArUeURNVPbW5nO7&amp;name=spesana'></script>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#ffffff" />
+        <Script src='https://analytics.ernestoyoofi.repl.co/analytics.js?key=k0YNIjFlfZRVspzWcTM2vg94UArUeURNVPbW5nO7&amp;name=spesana'></Script>
       </Head>
     </div>
   )

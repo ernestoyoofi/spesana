@@ -6,7 +6,6 @@ import styles from '../styles/Home.module.css'
 // Component
 import Navbar from '../comp/navbar'
 import ScrollTop from '../comp/srolltop'
-import HeroImage from '../comp/heroimage'
 
 export default function Home() {
   const router = useRouter()

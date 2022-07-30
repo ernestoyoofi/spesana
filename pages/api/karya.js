@@ -4,10 +4,6 @@ export default function pages(req, res) {
   res.status(200).json({
     error: false,
     message: ``,
-    pages: {
-      karya: `${host}/api/karya`,
-      gallery: `${host}/api/gallery`
-    },
-    result: db.getHome()
+    result: db.getKarya()
   })
 }
