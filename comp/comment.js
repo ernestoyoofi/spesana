@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import Script from 'next/script';
 // Component
 import styles from '../styles/Home.module.css'
-const hostDB = "http://localhost:5500"
+const hostDB = "https://spesana-comments-pages-8baf84c0d.ernestoyoofi.repl.co"
 
 export default function Comp() {
   const router = useRouter();
