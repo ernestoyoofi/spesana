@@ -1,3 +1,15 @@
+/**
+* Build By    : Ernestoyoofi
+* Filetype    : *.module.css
+* Time Update : 18:29 WIB / Asia/Jakarta
+* License     : MIT
+**/
+.respon_pr {
+  width: 90%;
+  max-width: 1090px;
+  padding-top: 10px;
+  margin: auto;
+}
 .respon {
   width: 90%;
   max-width: 1090px;
@@ -20,12 +32,17 @@
   align-items: center;
 }
 .error_container .error_info {
+  width: 100%;
+  max-width: 500px;
   box-shadow: rgba(0,0,0,0.1) 0px 0px 4px;
   border: 1px solid #ff0000;
   border-left: 7px solid #ff0000;
   padding: 12px;
   border-radius: 5px;
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
 }
 .error_container .error_info .error_img {
   width: 65px;
@@ -35,10 +52,6 @@
   width: 100%;
 }
 @media only screen and (max-width: 610px) {
-  .error_container .error_info {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   .error_container .error_info .error_img {
     width: 65px;
     height: 65px;
@@ -80,7 +93,18 @@
   width: 100%;
   height: 48px;
   background-color: #ffffff;
-  box-shadow: rgba(0,0,0,0.1) 0px 0px 7px; 
+  box-shadow: rgba(0,0,0,0.1) 0px 0px 7px;
+  z-index: 9999999999;
+}
+.navbar_block {
+  position: fixed;
+  top: 48px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 999999;
+  transition: .3s;
+  background-color: rgba(0, 0, 0, 0.334);
 }
 .navbar .respon {
   height: 100%;
@@ -145,6 +169,8 @@
         transition: .6s;
         background-color: #ffffff;
         box-shadow: rgba(0,0,0,0.1) 0px 0px 7px;
+        z-index: 99999999;
+        padding: 17px 0px 0px 0px;
     }
     .row_navbar .link_navbar a{
         margin: auto;
@@ -152,6 +178,7 @@
         display: block;
         padding: 10px;
         color: #000000;
+        border-radius: 2px;
     }
     .row_navbar .link_navbar a:hover {
       background-color: #1e80ff;
@@ -164,7 +191,7 @@
     }
     .row_navbar .link_navbar form input{
         width: 100%;
-        margin-left: -6px;
+        margin-left: 0px;
         margin-top: 3px;
     }
 }
@@ -228,11 +255,12 @@
 }
 /* ===== [ Row Views ] ===== */
 .row_view_labels {
-  display: inline-block;
+  display: block;
   background-color: #4879ff;
   color: #ffffff;
   padding: 6px 12px 6px 6px;
   border-left: 6px solid #1e5aff;
+  margin-left: 0.5%;
 }
 .row_view_content {
   margin: 6px 0px;
@@ -240,12 +268,29 @@
   flex-wrap: wrap;
 }
 .row_view_content .content {
+  margin: 4px 0px;
   width: 32.3%;
+  margin: .5%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px;
 }
 .row_view_content .content_img {
   width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.row_view_content .varter {
+  padding: 6px;
+}
+.row_view_content .content_times {
+  font-size: 14px;
+  color: #333333;
 }
 .row_view_content .content_author_card {
+  margin-top: 3px;
   width: 100%;
   height: 30px;
   display: flex;
@@ -260,11 +305,110 @@
 }
 @media only screen and (max-width: 732px) {
   .row_view_content .content {
-    width: 49.5%;
+    width: 49%;
   }
 }
 @media only screen and (max-width: 470px) {
   .row_view_content .content {
     width: 100%;
   }
+}
+/* ==== [ LOADING ] ==== */
+@keyframes rotate {
+  100% { transform: rotate(360deg); }
+ }
+
+ @keyframes dash {
+  0% { stroke-dasharray: 1,200; stroke-dashoffset: 0; }
+  50% { stroke-dasharray: 89,200; stroke-dashoffset: -35; }
+  100% { stroke-dasharray: 89,200; stroke-dashoffset: -124; }
+ }
+.loading {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading .loading_con{
+  width: 50px;
+  height: 50px;
+  transform: scale(0.6);
+}
+.loading .loading_cyc{
+  position: relative;
+  animation: rotate 1.7s linear infinite;
+  height: 50px;
+  width: 50px;
+}
+.loading .loading_par{
+  stroke: #1e5aff;
+  stroke-dasharray: 1,200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash 1.2s ease-in-out infinite;
+}
+/* ===== [ Footer ] ===== */
+.footer {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  background-color: #1e5aff;
+}
+/* ===== [ Comments ] ===== */
+.comments {
+  width: 100%;
+  padding: 12px 6px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.7px 3px;
+}
+.comments .comments_box_form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+.comments .comments_box_form textarea{
+  height: 150px;
+}
+.comments .comments_box_form input[name="nama"], .comments .comments_box_form textarea, .comments .comments_box_form button{
+  width: 100%;
+  display: block;
+  margin-bottom: 8px;
+  resize: none;
+  border: 1px solid #eaeaea;
+}
+.comments .comments_box_form button{
+  width: auto;
+  display: inline-block;
+  padding: 6px 15px;
+}
+/* ===== [ KARYA ] ====== */
+.karya_readme {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  margin-bottom: 7px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.7px 3px;
+}
+.karya_readme .karya_responsive {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+.karya_readme .box_iframe {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+  box-sizing: inherit;
+}
+.karya_readme .iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: inherit;
 }

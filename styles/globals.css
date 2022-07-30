@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Quicksand:wght@500;600;700&family=Roboto:wght@300;400&display=swap');
 html, body {
   scroll-behavior: smooth;
+  font-family: 'Quicksand', sans-serif;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #efefef;
+}
+
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -26,8 +31,34 @@ input, textarea, button, .button{
   outline: 0px solid rgba(23,65, 55,0.3);
   border-radius: 3px;
   transition: .3s;
+  box-shadow: rgba(1, 69, 255, 0.2) 0px 0px 0px;
+  font-family: 'Quicksand', sans-serif;
+}
+button {
+  background-color: #ffffff;
 }
 input:focus, textarea:focus, button:focus, .button:focus{
-  border: 1px solid #517fff;
+  border: 1px solid #0044ff;
   outline: 3px solid rgba(1, 69, 255, 0.2);
+  box-shadow: rgba(1, 69, 255, 0.3) 0px 0px 10px;
+}
+
+.user-comments {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.user-comments .images-pp {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.user-comments .text-cmd {
+  margin-left: 50px;
 }
