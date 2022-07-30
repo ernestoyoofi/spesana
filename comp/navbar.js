@@ -13,6 +13,7 @@ export default function Comp() {
   const Navbar = () => {
     if (document.getElementById("navbar").getAttribute("open-nav") === 'false') {
       document.getElementById("navbar").setAttribute("open-nav", "true")
+      window.localStorage.setItem("open-nav", true)
       document.getElementById("navbar").style.marginBottom = "0px"
       document.getElementById("navbar_block").style.display = "inline"
       setTimeout(() => {
@@ -20,6 +21,7 @@ export default function Comp() {
       }, 100)
     } else {
       document.getElementById("navbar").setAttribute("open-nav", "false")
+      window.localStorage.setItem("open-nav", false)
       document.getElementById("navbar").style.marginBottom = "-2000px"
       document.getElementById("navbar_block").style.opacity = "0"
       setTimeout(() => {
@@ -28,10 +30,21 @@ export default function Comp() {
     }
   };
   useEffect(() => {
+    const datanavbar = window.localStorage.getItem("open-nav") || window.localStorage.setItem("open-nav", false) 
     if(router.pathname === '/search') {
       document.getElementById("searchMinBars").value = router.query.search_name
     }
     console.log(apper.split("/")[1] || "index")
+    if(datanavbar === "true") {
+      document.getElementById("navbar").setAttribute("open-nav", "true")
+      document.getElementById("navbar_block").style.display = "inline"
+      document.getElementById("navbar").style.marginBottom = "0px"
+      document.getElementById("navbar").style.transition = ".0s"
+      setTimeout(() => {
+        document.getElementById("navbar_block").style.opacity = "1"
+        document.getElementById("navbar").style.transition = ".6s"
+      }, 100)
+    }
   })
     return (
       <header className={styles.navbar}>
@@ -44,7 +57,7 @@ export default function Comp() {
                     </span>
                     <p style={{marginLeft: '10px'}}>Spesana</p>
                   </div>
-                  <div className={styles.link_navbar} id="navbar" open-nav="false">
+                  <div className={styles.link_navbar} id="navbar" open-nav="false" style={{ transition: "0" }}>
                     <Link href={`/?from=${apper.replace('/', '%2F')}`}>Beranda</Link>
                     <Link href={`/karya?from=${apper.replace('/', '%2F')}`}>Karya</Link>
                     <Link href={`/blog?from=${apper.replace('/', '%2F')}`}>Blog</Link>
