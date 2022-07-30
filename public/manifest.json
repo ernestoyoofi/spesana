@@ -1,0 +1,23 @@
+{
+  "name": "Spesana Nanggulan 8B",
+  "short_name": "Spesana - 8B",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/icon.jpg",
+      "sizes": "640x640",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/ico"
+    }
+  ],
+  "splash_pages": null
+}
