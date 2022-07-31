@@ -16,6 +16,9 @@ export default function Home() {
       <Head>
         <title>FESTIVAL LANGEN CARITA DEMANG CILIK | Spesana Nanggulan 8B</title>
         <meta name="description" content="Website Siswa SMPN 1 Nanggulan " />
+        <meta itemprop="image" content="https://img.youtube.com/vi/FDS84THZtbY/hqdefault.jpg"/>
+        <meta property="og:image" content="https://img.youtube.com/vi/FDS84THZtbY/hqdefault.jpg"/>
+        <meta image="twitter:image" content="https://img.youtube.com/vi/FDS84THZtbY/hqdefault.jpg"/>
       </Head>
       <Navbar />
       <ScrollTop />
