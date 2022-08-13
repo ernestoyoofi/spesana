@@ -42,6 +42,20 @@
     ],
     "gallery": [
       {
+        "title": "Post 3",
+        "thubnails": "/unknow-content-3.jpg",
+        "description": null,
+        "url": "/gallery/post-3",
+        "create_time": "9 Agustus 2022",
+        "id_cache": "mELu3lSVRxYdUAgzoGjm7ByuVVxInq-gallery",
+        "absen": 16,
+        "cards": {
+          "isPublic": true,
+          "isYoutube": false,
+          "html": null
+        }
+      },
+      {
         "title": "Praktek IPA",
         "thubnails": "/praktek-ipa-7b.thumb.jpg",
         "description": null,
@@ -54,12 +68,26 @@
           "isYoutube": false,
           "html": "<video src=\"\" controls></video>"
         }
+      },
+     {
+        "title": "IMG-M3-79121.jpg",
+        "thubnails": "/test-swb-7b.thumb.jpg",
+        "description": null,
+        "url": "/gallery/test-swb-7b",
+        "create_time": "24 November 2021",
+        "id_cache": "SJBAKu8HdaSAysK0wnG9A6tOmU65gH-gallery",
+        "absen": 13,
+        "cards": {
+          "isPublic": true,
+          "isYoutube": false,
+          "html": null
+        }
       }
     ]
   },
   "user": [
     {
-      "avatar": "/assets/avatar/user/catrin.jpg",
+      "avatar": "/assets/avatar/user/users.jpg",
       "name": "Catarina",
       "attag": "catrin",
       "description": null,
