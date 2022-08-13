@@ -18,8 +18,8 @@ export default function User() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{dbret.name? `${dbret.name}'s | Spesana Nanggulan 8B` : "Username's | Spesana Nanggulan 8B"}</title>
-        <meta name="description" content="Website Siswa SMPN 1 Nanggulan " />
+        <title>{dbret?.name? || "Unknown"} | Spesana Nanggulan 8B</title>
+        <meta name="description" content="Users Profile " />
       </Head>
       <Navbar />
       <ScrollTop />
