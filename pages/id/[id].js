@@ -18,7 +18,7 @@ export default function User() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>{dbret?.name? || "Unknown"} | Spesana Nanggulan 8B</title>
+        <title>{dbret?.name || "Unknown"} | Spesana Nanggulan 8B</title>
         <meta name="description" content="Users Profile " />
       </Head>
       <Navbar />
