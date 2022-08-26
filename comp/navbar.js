@@ -55,7 +55,7 @@ export default function Comp() {
                     <span className={styles.btn_navbar} onClick={(e) => Navbar()}>
                         <FontAwesomeIcon icon={faBars} className={styles.icon} style={{ width: '15px', height: '15px' }}/>
                     </span>
-                    <p style={{marginLeft: '10px'}}>Spesana<img src="/special-assets/indonesia-flag.png" width="40px" style={{ position: "absolute", marginLeft: "-13px", marginTop: "-13px" }}/></p>
+                    <p style={{marginLeft: '10px'}}>Spesana{/**<img src="/special-assets/indonesia-flag.png" width="40px" style={{ position: "absolute", marginLeft: "-13px", marginTop: "-13px" }}/>**/}</p>
                   </div>
                   <div className={styles.link_navbar} id="navbar" open-nav="false" style={{ transition: "0" }}>
                     <Link href={`/?from=${apper.replace('/', '%2F')}`}>Beranda</Link>
