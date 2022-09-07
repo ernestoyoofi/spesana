@@ -1,34 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### Spesana Web (8B)
 
-## Getting Started
+Project Ini Dibuat Menggunakan [Next.js](https://nextjs.org/?utm=spesana.vercel.app?utm_source=spesana.vercel.app)
 
-First, run the development server:
+### Halaman Tersedia
+- [Beranda](https://spesana.vercel.app/?utm_sc=readme.md)
+- [Karya](https://spesana.vercel.app/karya?utm_sc=readme.md)
+- [Perpustakaan](https://spesana.vercel.app/library?utm_sc=readme.md)
+- [Gallery](https://spesana.vercel.app/gallery?utm_sc=readme.md)
+- [Dokument](https://spesana.vercel.app/docs?utm_sc=readme.md)
 
-```bash
-npm run dev
-# or
-yarn dev
+### Untuk APL / API ( Application Programming Interface )
+Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 2
+
+[List Halaman](https://github.com/ernestoyoofi/spesana#list-halaman-get) • 
+
+#### List Halaman **[GET]**
+> Header Atau Parameter Khusus
+```js
+{
+  tp: "v2" || "v1", // Tidak Selalu (?)
+  row_items: "rmd" || "10" || "all", // Tidak Selalu (?)
+  items: "karya" || "buku" || "gallery" || "docs" // Tidak selalu
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Results / Hasil 📂
+```js
+{
+  "beranda": {
+    "karya": [
+      {
+        "title": "FESTIVAL LANGEN CARITA DEMANG CILIK",
+        "desc": "Sutradara : suhari Ratmoko, S.Pd Penata Tari : Dwi P Penata busana : Pelangi entertaiment DEMANG CILIK July 1904, Bera ...",
+        "date": {
+          "value": "Jumat 8 Oktober 2021",
+          "index": 4,
+          "raw": "2021-10-08"
+        },
+        "upload_by": {
+          "name": "Widianingtyas",
+          "pic_id": "339a6a94-a568-4718-8cb3-45e37685616a"
+          "absen": 23,
+          "fork": false
+        },
+        "link": "/karya/festival-langen-carita",
+        "pagescrap": "/v2/main/festival-langen-carita?tp=v2"
+      }
+      ... View 4 Raw / View By Parameters
+    ],
+    "buku": [
+      {
+        "title": "Pendidikan Pancasila dan Kewarganegaraan",
+        "date": {
+          "value": "Januari 2017",
+          "index": 4,
+          "raw": "2017-01"
+        },
+        "upload_by": {
+          "name": "BSE",
+          "host": "https://www.myedisi.com/"
+          "org": true
+        },
+        "link": "/library/kelas8/ppkn-2017"
+      }
+      ... View 4 Raw / View By Parameters
+    ]
+  }
+}
+```
