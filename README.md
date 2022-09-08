@@ -2,6 +2,8 @@
 
 Project Ini Dibuat Menggunakan [Next.js](https://nextjs.org/?utm=spesana.vercel.app?utm_source=spesana.vercel.app)
 
+### Sosial Media
+[Tiktok](https://www.tiktok.com/@spesana24b) | [YouTube]() | [Instagram](https://instagram.com/spesana24b/)
 ### Halaman Tersedia
 - [Beranda](https://spesana.vercel.app/?utm_sc=readme.md)
 - [Karya](https://spesana.vercel.app/karya?utm_sc=readme.md)
