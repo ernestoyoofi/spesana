@@ -10,7 +10,7 @@ Project Ini Dibuat Menggunakan [Next.js](https://nextjs.org/?utm=spesana.vercel.
 - [Dokument](https://spesana.vercel.app/docs?utm_sc=readme.md)
 
 ### Untuk APL / API ( Application Programming Interface )
-Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 2
+Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 3
 
 [List Halaman](https://github.com/ernestoyoofi/spesana#list-halaman-get) • 
 
@@ -18,7 +18,7 @@ Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 2
 > Header Atau Parameter Khusus
 ```js
 {
-  tp: "v2" || "v1", // Tidak Selalu (?)
+  tp: "v3", // Tidak Selalu (?)
   row_items: "rmd" || "10" || "all", // Tidak Selalu (?)
   items: "karya" || "buku" || "gallery" || "docs" // Tidak selalu
 }
@@ -44,7 +44,7 @@ Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 2
           "fork": false
         },
         "link": "/karya/festival-langen-carita",
-        "pagescrap": "/v2/main/festival-langen-carita?tp=v2"
+        "pagescrap": "/v3/main/festival-langen-carita?tp=v3"
       }
       ... View 4 Raw / View By Parameters
     ],
