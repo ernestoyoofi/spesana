@@ -14,15 +14,62 @@ Project Ini Dibuat Menggunakan [Next.js](https://nextjs.org/?utm=spesana.vercel.
 ### Untuk APL / API ( Application Programming Interface )
 Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 3
 
+#### Library / Perpustakaan • [Klik](https://spna.vercel.app/api/v3/lib)
+
+> Options 📌
+```js
+{
+  _method: "GET",
+  _path: "/api/v3/lib",
+  _connection: "close" || "Keep-alive",
+  _async: false
+}
+```
+> Results 📝
+```js
+{
+  status: 200,
+  statusCode: "Ok",
+  ermsg?: [],
+  items: [
+    {
+      name: "Buku Bahasa Indonesia - Kelas 7", // Nama Buku
+      cover: "https://spesana.vercel.app/sp-content/lib/no-image.thumb.jpg", // URL Foto Buku
+      desc: "Penulis: Titik Harsiati / Agus Trianto / E.Kosasih \nPenerbit: Buku Sekolah Elektronik (BSE) \nISBN: 9786022829683 \nTerbit: Juni 1016 , 312 Halaman ...", // Deskripsi Pendek Tentang Buku
+      url: "/perpustakaan/b-indo", // URL Halaman
+      other?: {
+        originalURL?: null,
+        sendByAds?: false,
+        typePromotion?: false,
+        htmlJS5?: "https://ernestoyoofi.github.io/pdf-perview/dest/pdf.build.js"
+      },
+      date: {
+        format: "2016-05-00T00:00:00.000Z",
+        textrn: "Juni 2016"
+      },
+      post_by: {
+        name: "BSE",
+        id: "-bse-org",
+        type: "org",
+        url: "https://www.myedisi.com/bse/"
+      }
+    }
+  ]
+}
+```
 #### Guru Dan Tenaga Kependidikan • [Klik](http://spna.vercel.app/api/v3/karyawan)
 
+> Options 📌
 ```js
 { 
-  method: "get",
-  basePATH: "/api/v3/karyawan"
+  _method: "GET",
+  _path: "/api/v3/karyawan",
+  _connection: "close" || "Keep-alive",
+  _async: true
 }
 ```
 
+> Results 📝
 ```js
 {
   status: 200,
