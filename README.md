@@ -23,12 +23,12 @@ Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 3
   ermsg?: [],
   value: [
     {
-      pp_pic: "", // URL Gambar Profile
-      name: "", // Nama
+      pp_pic: "https://www.smpn1nanggulan.sch.id/media_library/employees/no-image.jpg", // URL Gambar Profile
+      name: "-", // Nama
       gender: "Laki - Laki" || "Perempuan", // Gender
-      birth_place: "", // Tempat Lahir
-      birth_date: "", // Tanggal Lahir
-      type: "" // Tipe Perkerjaan
+      birth_place: "Kulonprogo", // Tempat Lahir
+      birth_date: "1 Januari 0", // Tanggal Lahir
+      type: "Guru" // Tipe Perkerjaan
     }
   ]
 }
