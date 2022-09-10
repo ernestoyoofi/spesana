@@ -20,14 +20,14 @@ Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 3
 {
   status: 200,
   statusCode: "Ok",
-  ermsg: []?,
+  ermsg?: [],
   value: [
     {
       pp_pic: "", // URL Gambar Profile
       name: "", // Nama
       gender: "Laki - Laki" || "Perempuan", // Gender
       birth_place: "", // Tempat Lahir
-      birth_date: "" // Tanggal Lahir
+      birth_date: "", // Tanggal Lahir
       type: "" // Tipe Perkerjaan
     }
   ]
