@@ -14,14 +14,21 @@ Project Ini Dibuat Menggunakan [Next.js](https://nextjs.org/?utm=spesana.vercel.
 ### Untuk APL / API ( Application Programming Interface )
 Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 3
 
-[Karyawan / (GTK) Guru Dan Tenaga Kependidikan](http://spna.vercel.app/api/v3/karyawan)
+#### Guru Dan Tenaga Kependidikan • [Klik](http://spna.vercel.app/api/v3/karyawan)
+
+```js
+{ 
+  method: "get",
+  basePATH: "/api/v3/karyawan"
+}
+```
 
 ```js
 {
   status: 200,
   statusCode: "Ok",
   ermsg?: [],
-  value: [
+  items: [
     {
       pp_pic: "https://www.smpn1nanggulan.sch.id/media_library/employees/no-image.jpg", // URL Gambar Profile
       name: "-", // Nama
@@ -29,6 +36,7 @@ Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 3
       birth_place: "Kulonprogo", // Tempat Lahir
       birth_date: "1 Januari 0", // Tanggal Lahir
       type: "Guru" // Tipe Perkerjaan
+      ... 19 Items
     }
   ]
 }
