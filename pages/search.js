@@ -8,16 +8,17 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../comp/navbar'
 import ScrollTop from '../comp/srolltop'
 
-export default function Home() {
+function searchList(props, path, apa) {
   const router = useRouter()
   const p = router.query.search_name
+  console.log(path)
   useEffect(() => {
    document.querySelector("#autoinput").value = router.query.search_name || ""
   })
   return (
     <div className={styles.container}>
       <Head>
-        <title>{ p || "Cari Halaman" } | Spesana Nanggulan 8B</title>
+        <title>{ p } | Spesana Nanggulan 8B</title>
         <meta name="description" content="Website Siswa SMPN 1 Nanggulan 7B" />
       </Head>
       <Navbar />
@@ -41,3 +42,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default searchList

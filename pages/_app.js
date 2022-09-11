@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="copyright" content="Spesana" />
         <meta name="language" content="Indonesia" />
         <meta name="robots" content="index,follow" />
-        <meta name="author" content="Ernestoyoofi" />
+        <meta name="author" content="Ernestoyoofi, Wibowo" />
         <meta name="designer" content="Ernestoyoofi" />
         <meta name="owner" content="Ernestoyoofi, Yosep Ghanny" />
         <meta name="robots" content="index, follow" />
@@ -31,6 +31,16 @@ function MyApp({ Component, pageProps }) {
       </Head>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+
+  // set HTTP header
+  context.res.setHeader("x-powered-by", "Spesana24B")
+
+  return {
+    props: {}, // will be passed to the page component as props
+  }
 }
 
 export default MyApp

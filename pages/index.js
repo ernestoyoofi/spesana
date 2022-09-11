@@ -11,10 +11,10 @@ import { faChartLine } from '@fortawesome/free-solid-svg-icons'
 import { useRouter } from 'next/router';
 
 import db from '../db/db.js'
+import db3 from "../db/db-v3"
 
 export default function Home() {
   const router = useRouter();
-
   const apper = router.pathname
   return (
     <div className={styles.container}>
@@ -27,38 +27,38 @@ export default function Home() {
       <div className={styles.respon_pr}>
         <div className={styles.row_view_labels}>Karya</div>
         <div className={styles.row_view_content}>
-          {db.getKarya()[0]? db.getKarya().map(res => (
-            <a className={styles.content} href={res.url + "?from=" + apper.replace('/', '%2F')}>
+          {db3.listPage("karya").karya[0]? db3.listPage("karya").karya.map(res => (
+            <a className={styles.content} href={res.link}>
               <div className={styles.content_img}>
-                <img src={"/assets/image/karya/"+res.thubnails} width="100%" />
+                <img src={"/sp-content/perview/"+res.thumb} width="100%" />
               </div>
               <div className={styles.varter}>
                 <b className={styles.content_title}>{res.title}</b>
-                <div className={styles.content_desc}>{res.description}</div>
-                <div className={styles.content_times}>{res.create_time}</div>
+                <div className={styles.content_desc}>{res.desc || ""}</div>
+                <div className={styles.content_times}>{res.date?.text || res.date?.format }</div>
                 <div className={styles.content_author_card}>
-                  <img src={res.user.avatar} alt={res} width="25px"/>
-                  <span>{res.user.name}</span>
+                  <img src={"/sp-content/profile/"+res.post_by?.pp_url} alt={res.post_by?.name} width="25px"/>
+                  <span>{res.post_by?.name}</span>
                 </div>
               </div>
             </a>
           )) : <div>Tidak Ada</div>}
         </div>
-
+        {/* Gallery */}
         <div className={styles.row_view_labels}>Gallery</div>
         <div className={styles.row_view_content}>
-          {db.getGallery()[0]? db.getGallery().map(res => (
-            <a className={styles.content} href={res.url + "?from=" + apper.replace('/', '%2F')}>
+          {db3.listPage("gallery").gallery[0]? db3.listPage("gallery").gallery.map(res => (
+            <a className={styles.content} href={res.link}>
               <div className={styles.content_img}>
-                <img src={"/assets/image/karya/"+res.thubnails} width="100%" />
+                <img src={"/sp-content/perview/"+res.thumb} width="100%" />
               </div>
               <div className={styles.varter}>
                 <b className={styles.content_title}>{res.title}</b>
-                <div className={styles.content_desc}>{res.description || ""}</div>
-                <div className={styles.content_times}>{res.create_time}</div>
+                <div className={styles.content_desc}>{res.desc || ""}</div>
+                <div className={styles.content_times}>{res.date?.text || res.date?.format }</div>
                 <div className={styles.content_author_card}>
-                  <img src={res.user.avatar} alt={res} width="25px"/>
-                  <span>{res.user.name}</span>
+                  <img src={"/sp-content/profile/"+res.post_by?.pp_url} alt={res.post_by?.name} width="25px"/>
+                  <span>{res.post_by?.name}</span>
                 </div>
               </div>
             </a>
