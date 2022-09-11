@@ -1,11 +1,8 @@
-/** @type {import('next').NextConfig} */
-/*const withPWA = require('next-pwa')
-const runtimeCaching = require('next-pwa/cache')
-
-module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    runtimeCaching,
-  },
-})
-*/
+module.exports = {
+  images: {
+    domains: [
+      "https://www.smpn1nanggulan.sch.id/",
+      "https://sp-content.mzea.repl.co/"
+    ]
+  }
+}
