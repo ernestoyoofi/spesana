@@ -93,7 +93,7 @@
   width: 100%;
   height: 48px;
   background-color: #ffffff;
-  box-shadow: rgba(0,0,0,0.1) 0px 0px 7px;
+  box-shadow: rgba(0,0,30,0.1) 0px 0px 20px;
   z-index: 9999999999;
 }
 .navbar_block {
@@ -104,6 +104,7 @@
   height: 100vh;
   z-index: 999999;
   transition: .3s;
+  display: block;
   background-color: rgba(0, 0, 0, 0.334);
 }
 .navbar .respon {
@@ -260,7 +261,8 @@
   color: #ffffff;
   padding: 6px 12px 6px 6px;
   border-left: 6px solid #1e5aff;
-  margin-left: 0.5%;
+  margin: 0px 0.5%;
+  margin-bottom: -9px;
 }
 .row_view_content {
   margin: 6px 0px;
@@ -268,11 +270,12 @@
   flex-wrap: wrap;
 }
 .row_view_content .content {
-  margin: 4px 0px;
+  margin: 6px 0px;
   width: 32.3%;
   margin: .5%;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px;
+  box-shadow: rgba(20, 20, 90, 0.1) 0px 0.4px 9px;
+  border: 1px solid rgb(220,220,220);
 }
 .row_view_content .content_img {
   width: 100%;
@@ -283,14 +286,15 @@
   overflow: hidden;
 }
 .row_view_content .varter {
-  padding: 6px;
+  padding: 10px;
 }
 .row_view_content .content_times {
   font-size: 14px;
   color: #333333;
+  margin: 8px 0px;
 }
 .row_view_content .content_author_card {
-  margin-top: 3px;
+  margin-top: 9px;
   width: 100%;
   height: 30px;
   display: flex;
@@ -301,7 +305,7 @@
   height: 30px;
   overflow: hidden;
   border-radius: 50%;
-  margin-right: 3px;
+  margin-right: 8px;
 }
 @media only screen and (max-width: 732px) {
   .row_view_content .content {
@@ -330,18 +334,18 @@
   justify-content: center;
   align-items: center;
 }
-.loading .loading_con{
+.loading_con{
   width: 50px;
   height: 50px;
   transform: scale(0.6);
 }
-.loading .loading_cyc{
+.loading_cyc{
   position: relative;
   animation: rotate 1.7s linear infinite;
   height: 50px;
   width: 50px;
 }
-.loading .loading_par{
+.loading_par{
   stroke: #1e5aff;
   stroke-dasharray: 1,200;
   stroke-dashoffset: 0;
@@ -352,30 +356,62 @@
 .footer {
   width: 100%;
   height: 100%;
-  padding: 6px;
-  background-color: #1e5aff;
+  background-color: rgb(240,240,240);
+  padding-bottom: 20px;
+}
+.footer a {
+  text-decoration: underline;
+}
+.footer .footer_row {
+  width: 100%;
+  display: flex;
+}
+.footer .footer_rowcontent {
+  width: 100%;
+  padding: 14px 19px;
+}
+.footer .footer_rowcontent ul {
+  list-style-type: none;
+}
+.footer .footer_counter {
+  text-align: center;
+  padding: 12px;
+}
+@media only screen and (max-width: 610px) {
+  .footer .footer_row {
+    display: inline;
+  }
 }
 /* ===== [ Comments ] ===== */
 .comments {
   width: 100%;
-  padding: 12px 6px;
+  padding: 16px;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0.7px 3px;
+  border: 1px solid rgb(220,220,220);
 }
 .comments .comments_box_form {
   width: 100%;
-  max-width: 400px;
-  margin: auto;
+}
+.comments .comments_box_form form {
+  max-width: 700px;
 }
 .comments .comments_box_form textarea{
   height: 150px;
 }
-.comments .comments_box_form input[name="nama"], .comments .comments_box_form textarea, .comments .comments_box_form button{
+.comments .comments_box_form input, .comments .comments_box_form textarea, .comments .comments_box_form button{
   width: 100%;
   display: block;
   margin-bottom: 8px;
   resize: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #6e6e6e7e;
+  outline: 0px solid rgba(139, 139, 139, 0.2);
+  box-shadow: rgba(151, 151, 151, 0.3) 0px 0px 0px;
+}
+.comments .comments_box_form input:focus, .comments .comments_box_form textarea:focus, .comments .comments_box_form button:focus{
+  border: 1px solid #0044ff;
+  outline: 3px solid rgba(1, 69, 255, 0.2);
+  box-shadow: rgba(1, 69, 255, 0.3) 0px 0px 10px;
 }
 .comments .comments_box_form button{
   width: auto;
@@ -388,11 +424,12 @@
   height: 100%;
   background-color: #ffffff;
   margin-bottom: 7px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.7px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.7px 7px;
+  border: 1px solid rgba(235,235,235);
+  padding: 10px;
 }
 .karya_readme .karya_responsive {
   width: 100%;
-  max-width: 800px;
   margin: auto;
 }
 .karya_readme .box_iframe {
@@ -411,4 +448,12 @@
   width: 100%;
   height: 100%;
   box-sizing: inherit;
+}
+.karya_readme .karya_ppt {
+  width: 50%;
+}
+@media only screen and (max-width: 610px) {
+  .karya_readme .karya_ppt {
+    width: 100%;
+  }
 }

@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  background-color: #efefef;
+  background-color: #fcfcfc;
 }
 
 pre {
@@ -43,22 +43,41 @@ input:focus, textarea:focus, button:focus, .button:focus{
   box-shadow: rgba(1, 69, 255, 0.3) 0px 0px 10px;
 }
 
-.user-comments {
+#ater-comments .comments-ac {
   width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  padding: 6px;
+  border: 1px solid #0044ff;
+  box-shadow: rgba(1, 69, 255, 0.2) 0px 0px 4px;
+  text-align: center;
 }
-.user-comments .images-pp {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 50%;
+#ater-comments .ac-err {
+  border: 1px solid #ff0000;
+  box-shadow: rgba(255, 1, 1, 0.2) 0px 0px 4px;
 }
-.user-comments .text-cmd {
-  margin-left: 50px;
+
+.comments-user {
+  width: 100%;
+  border: 1px solid rgb(215,215,215);
+  border-radius: 2.3px;
+  margin-top: 12px;
+  box-shadow: rgba(200, 200, 200, 0.2) 0px 0px 7px;
+}
+.comments-user .headers {
+  padding: 9px;
+  background-color: rgba(245,245,245, 0.4);
+  border-bottom: 1px solid rgba(215,215,215,0.3);
+}
+.comments-user .headers .name{
+  margin-right: 8px;
+}
+.comments-user .headers .date{
+  color: #575757;
+  font-weight: 400;
+}
+.comments-user .bodyC {
+  padding: 9px;
+}
+.comments-user .bodyC a{
+  color: #1d59ff;
+  text-decoration: underline;
 }
