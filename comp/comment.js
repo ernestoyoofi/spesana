@@ -22,6 +22,8 @@ export default function Comp({ id }) {
     const form = document.forms['comment-form']
     form?.addEventListener("submit", (e) => {
       UpdateComments()
+      document.querySelector('form[name="comment-form"] input').classList.add("oninput")
+      document.querySelector('form[name="comment-form"] textarea').classList.add("oninput")
       e.preventDefault()
       const params = new URLSearchParams(new FormData(form));
       axios.post(`${hostDB}/comments-post`, params, { spna: { hs: window.location.hostname } }).then(res => { UpdateComments() }).catch(err => { alert(err) })
@@ -38,6 +40,10 @@ export default function Comp({ id }) {
       axios.get(`${hostDB}/comments-load?files=${files}`).then(res => {
         for(let i in res.data) { userComments = Number(i) + 1}
         document.querySelector(".draw-value").innerText = `${userComments} Komentar`
+        document.querySelector('form[name="comment-form"] input').classList?.remove("oninput")
+        document.querySelector('form[name="comment-form"] textarea').classList?.remove("oninput")
+        document.querySelector('form[name="comment-form"] input').value = ""
+        document.querySelector('form[name="comment-form"] textarea').value = ""
         let data = ""
         let df = 0
         for(let i in res.data) {
@@ -63,7 +69,7 @@ export default function Comp({ id }) {
       <div className={styles.comments_box_form} id="ater-comments">
         { dbAccess? <form name="comment-form">
             <label>Nama</label>
-            <input type="name" name="nama" placeholder='Nama Kamu ...' required/>
+            <input type="name" name="nama" placeholder='Nama Kamu ...' required class="oninput"/>
             <label>Pesan</label>
             <div id="viewDisplayReplys"></div>
             <textarea name="text" required placeholder='Ketik Pesan Kamu Disini ...'></textarea>
