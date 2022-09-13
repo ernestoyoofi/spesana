@@ -16,9 +16,9 @@ export default function Gallery() {
       <Head>
         <title>Foto Kelas, Hari Olahraga Nasional | Spesana Nanggulan 24B</title>
         <meta name="description" content="8 Foto Tersedia /sp-content/image/foto-kelas..." />
-        <meta itemprop="image" content="/sp-content/perview/foto-kelas-ornas.perview.jpg" />
-        <meta property="og:image" content="/sp-content/perview/foto-kelas-ornas.perview.jpg" />
-        <meta image="twitter:image" content="/sp-content/perview/foto-kelas-ornas.perview.jpg" />
+        <meta itemprop="image" content="https://spna.vercel.app/sp-content/perview/foto-kelas-ornas.perview.jpg" />
+        <meta property="og:image" content="https://spna.vercel.app/sp-content/perview/foto-kelas-ornas.perview.jpg" />
+        <meta image="twitter:image" content="https://spna.vercel.app/sp-content/perview/foto-kelas-ornas.perview.jpg" />
       </Head>
       <Navbar />
       <ScrollTop />
