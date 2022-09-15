@@ -1,7 +1,4 @@
-### Spesana Web (8B)
-
-Project Ini Dibuat Menggunakan [Next.js](https://nextjs.org/?utm=spesana.vercel.app?utm_source=spesana.vercel.app)
-
+## Spesana Web (8B)
 ### Sosial Media
 [Tiktok](https://www.tiktok.com/@spesana24b) | [YouTube]() | [Instagram](https://instagram.com/spesana24b/)
 ### Halaman Tersedia
