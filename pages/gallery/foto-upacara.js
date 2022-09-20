@@ -23,6 +23,7 @@ export default function Gallery() {
       <Navbar />
       <ScrollTop />
       <div className={styles.respon_pr}>
+      <p>Halaman Tidak Dapat Dipublikasikan Ke Search Engine <a href="https://mzea.vercel.app/d/public-state">Learn More!</a></p>
         <div className={styles.karya_readme}>
           <div className={styles.karya_responsive}>
             <img src="/sp-content/image/foto-upacara.content.jpg" className={styles.karya_ppt} />
