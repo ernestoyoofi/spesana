@@ -3,12 +3,29 @@ const fileDB = require("./sp.db.json")
 const shLink = function (id) {
   const search = fileDB.shortlink.map(data => (data.id)).indexOf(id)
   if(search === -1) {
-    return "https://spna.vercel.app/shlink-err"
+    return {
+      url: "/docs/shortlink",
+      link: "https://spesana.vercel.app/docs/build-shortlink"
+    }
   } else {
-    return fileDB.shortlink.map(a => (a.url))[search]
+    const keysF = fileDB.shortlink[search]
+    return {
+      url: keysF?.url,
+      link: LinkF(keysF?.url),
+      title: keysF?.title || "Spesana 24B",
+      desc: keysF?.desc || "",
+      img: LinkF(keysF?.img) || ""
+    }
   }
 }
-
+function LinkF(link) {
+  const url = link?.slice(0,1)
+  if(url === "/") {
+   return `https://spna.vercel.app${link}`
+  } else {
+   return link
+  }
+}
 /**
 * @name listPage
 * @param page 

@@ -6,8 +6,16 @@
   ],
   "shortlink":[
     {
-      "id": "9410313219429",
-      "url": "https://google.com/"
+      "id": "Zlbrla",
+      "url": "/gallery/foto-kelas-ornas",
+      "title": "Foto Kelas, Hari Olahraga Nasional - Spesana 24B",
+      "desc": "8 Foto Tersedia /sp-content/image/foto-kelas..."
+    },
+    {
+      "id": "Gahzipl",
+      "url": "/gallery/foto-upcara",
+      "title": "Foto Upacara - Spesana 24B",
+      "desc": ""
     }
   ],
   "page": {
@@ -66,6 +74,19 @@
       }
     ],
     "gallery": [
+      {
+        "title": "Upacara",
+        "thumb": "foto-upacara.perview.jpg",
+        "desc": "",
+        "details": {
+          "post-id": "UwuRrp6CtGLOqdbAZRASSTcfskAGHZ-gallery",
+          "post-by": "udybC2aYO4EHz32HfujZdmGv3l7k2l-siswa.id",
+          "post-date": "2021-09-19T07:00:00.000Z",
+          "post-type": "private",
+          "post-comment": true,
+          "page": "/gallery/foto-upcara"
+        }
+      },
       {
         "title": "Foto Kelas Hari Olahraga Nasional",
         "thumb": "foto-kelas-ornas.perview.jpg",
