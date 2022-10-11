@@ -1,5 +1,10 @@
 # Cerita Tentangku Menjadi Osis!
 
+## Perkenalan Tentang Saya
+
+Hai, Saya [Ernestoyoofi](/data-siswa/13?thn=2022/2023), Siswa Dari [SMP Negeri 1 Nanggulan (Jatisarono)]()
+Kelas 8B (2022/2023)
+
 ## Hari Pertama (LPJ) Laporan Pertanggung Jawaban Pengurus Osis Kepada MPK
 
 Awal mula acara ini dimulai pada pukul 13:10:21 pada tanggal Selasa, 11 Oktober 2022.
@@ -37,6 +42,6 @@ Laporan tersebut berisi tentang **Visi Misi**, **Kerja Pada Agama Islam**, **Ker
     "story-of-student"
   ],
   "allow_comment": true,
-  "id: ""
+  "id": ""
 }
 ```
