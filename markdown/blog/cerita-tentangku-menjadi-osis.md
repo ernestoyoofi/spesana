@@ -2,6 +2,11 @@
 
 ## Hari Pertama (LPJ) Laporan Pertanggung Jawaban Pengurus Osis Kepada MPK
 
+Awal mula acara ini dimulai pada pukul 13:10:21 pada tanggal Selasa, 11 Oktober 2022.
+Acara ini bermulanya dengan bernyanyi "Indonesia Raya", "Berdoa memulai" dan "pembukaan"
+
+
+
 ```js
 // This Script, End For Header Content In Nextjs, Apply With Json To Posting On Website
 {
