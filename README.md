@@ -1,4 +1,6 @@
 ## Spesana Web (8B)
+Selalu berbeda dari lainnya dan tetap bersatu
+
 ### Sosial Media
 [Tiktok](https://www.tiktok.com/@spesana24b) | [YouTube]() | [Instagram](https://instagram.com/spesana24b/)
 ### Halaman Tersedia
