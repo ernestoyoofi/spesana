@@ -1,89 +1,96 @@
-## Spesana Web (8B)
+## 📚 Spesana24B
 Selalu berbeda dari lainnya dan tetap bersatu
 
-### Sosial Media
-[Tiktok](https://www.tiktok.com/@spesana24b) | [YouTube]() | [Instagram](https://instagram.com/spesana24b/)
-### Halaman Tersedia
-- [Beranda](https://spesana.vercel.app/?utm_sc=readme.md)
-- [Karya](https://spesana.vercel.app/karya?utm_sc=readme.md)
-- [Perpustakaan](https://spesana.vercel.app/library?utm_sc=readme.md)
-- [Gallery](https://spesana.vercel.app/gallery?utm_sc=readme.md)
-- [Dokument](https://spesana.vercel.app/docs?utm_sc=readme.md)
+## 📱 Sosial Media
+[Tiktok @spesana24b](https://www.tiktok.com/@spesana24b) <br />
+[Instagram spesana24b](https://instagram.com/spesana24b/) <br />
 
-### Untuk APL / API ( Application Programming Interface )
-Halaman Belum Rilis Karena Hanya Tersedia Untuk Versi Ke 3
-
-#### Library / Perpustakaan • [Klik](https://spna.vercel.app/api/v3/lib)
-
-> Options 📌
+## 📦 Modules Untuk API's
 ```js
-{
-  _method: "GET",
-  _path: "/api/v3/lib",
-  _connection: "close" || "Keep-alive",
-  _async: false
-}
+const Spesana = require("@spesana24b/spesana")
+
+const spna = new Spesana()
 ```
-> Results 📝
+## 🔖 Contoh Penggunaan
+> Login / Oauth by script
 ```js
-{
-  status: 200,
-  statusCode: "Ok",
-  ermsg?: [],
-  items: [
-    {
-      name: "Buku Bahasa Indonesia - Kelas 7", // Nama Buku
-      cover: "https://spesana.vercel.app/sp-content/lib/no-image.thumb.jpg", // URL Foto Buku
-      desc: "Penulis: Titik Harsiati / Agus Trianto / E.Kosasih \nPenerbit: Buku Sekolah Elektronik (BSE) \nISBN: 9786022829683 \nTerbit: Juni 1016 , 312 Halaman ...", // Deskripsi Pendek Tentang Buku
-      url: "/perpustakaan/b-indo", // URL Halaman
-      other?: {
-        originalURL?: null,
-        sendByAds?: false,
-        typePromotion?: false,
-        htmlJS5?: "https://ernestoyoofi.github.io/pdf-perview/dest/pdf.build.js"
-      },
-      date: {
-        format: "2016-05-00T00:00:00.000Z",
-        textrn: "Juni 2016"
-      },
-      post_by: {
-        name: "BSE",
-        id: "-bse-org",
-        type: "org",
-        url: "https://www.myedisi.com/bse/"
-      }
+const fs = require("fs")
+const Spesana = require("@spesana24b/spesana")
+
+const spna = new Spesana()
+
+async function oauth() {
+  const setup = await spna.teams({
+    uuid_team: "TEAM-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" // Berikan UUID Team
+  })
+  
+  return setup.data.url
+}
+function oauthotp() {
+  const setup = await spna.teams({
+    uuid_team: "TEAM-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", // Berikan UUID Team
+    ontimekey: true // Tambahkan on time key untuk mendapatkan kunci client
+  })
+  
+  setup.on("realtime", (data) => {
+    if(data.giveurl) {
+      console.log(`Masuk melalu link ini :${data.giveurl}`)
     }
-  ]
-}
-```
-#### Guru Dan Tenaga Kependidikan • [Klik](http://spna.vercel.app/api/v3/karyawan)
-
-> Options 📌
-```js
-{ 
-  _method: "GET",
-  _path: "/api/v3/karyawan",
-  _connection: "close" || "Keep-alive",
-  _async: true
-}
-```
-
-> Results 📝
-```js
-{
-  status: 200,
-  statusCode: "Ok",
-  ermsg?: [],
-  items: [
-    {
-      pp_pic: "https://www.smpn1nanggulan.sch.id/media_library/employees/no-image.jpg", // URL Gambar Profile
-      name: "-", // Nama
-      gender: "Laki - Laki" || "Perempuan", // Gender
-      birth_place: "Kulonprogo", // Tempat Lahir
-      birth_date: "1 Januari 0", // Tanggal Lahir
-      type: "Guru" // Tipe Perkerjaan
-      ... 19 Items
+    if(data.getcode) {
+      fs.writeFileSync("./token.json", JSON.stringify(data.getcode), "utf-8")
+      console.log(`Berhasil mendapatkan code, tekan keyword "CTRL"+"C" untuk memberhentikan / membunuh proses script ini !`)
     }
-  ]
+  })
+  setup.on("exit", (data) => {
+    console.log("Client keluar dengan code:" + data)
+    process.exit()
+  })
 }
+
+// Dapatkan dan copy token yang diberikan
+oauth().then((results) => {
+  console.log(`Lanjutkan login ke ${results}`)
+  // Setelah mendapatkan keys build client.
+  // Simpan keys tersebut
+})
+// Dapatkan secara otomatis dan tersimpan kedalam file
+oauthotp()
+```
+> Buat halaman via file atau variable
+```js
+const fs = require("fs")
+const Spesana = require("@spesana24b/spesana")
+
+const spna = new Spesana()
+
+async function darifile() {
+  const files = fs.readFileSync("./myblog.md").toString()
+  
+  const config = {
+    token: `USER-KEY-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX | KEY-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`,
+    namefile: "myblog", // Jangan akhiri dengan dot extension seperti myblog.md, namun myblog karena server tidak merekomendasikannya
+    content: files,
+    type: "blog" // Ubah tipe yang diinginkan [Warn] untuk tipe pages hanya terdapat 2 tipe yaitu "blog" dan "karya"
+  }
+  
+  const hasil = await spna.createpage(config)
+  
+  return hasil.data
+}
+
+async function darivariable(content) {
+  const config = {
+    token: `USER-KEY-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX | KEY-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX`,
+    namefile: "myblog-1", // Jangan akhiri dengan dot extension seperti myblog.md, namun myblog karena server tidak merekomendasikannya
+    content: content,
+    type: "blog" // Ubah tipe yang diinginkan [Warn] untuk tipe pages hanya terdapat 2 tipe yaitu "blog" dan "karya"
+  }
+  
+  const hasil = await spna.createpage(config)
+  
+  return hasil.data
+}
+
+darifile().then(console.log)
+darivariable("Test !").then(console.log)
 ```
