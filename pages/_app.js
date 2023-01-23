@@ -11,6 +11,7 @@ import Script from 'next/script'
 function MyApp({ Component, pageProps }) {
   return (
     <div>
+      <div style={{width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center",zIndex:"9999999999999999999999999999999999999999999"}}>The site will no longer be available after March 12, 2023 !</div>
       <Component {...pageProps} />
       <Head>
         <meta name="keywords" content="Spesana, Spesana Nanggulan, SMPN 1 Nanggulan, smpn1nanggulan.sch.id"/>
