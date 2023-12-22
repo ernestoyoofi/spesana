@@ -1,3 +1,7 @@
+> **Informasi**
+>
+> Respository ini telah ditutup dan tidak digunakan kembali, repository baru telah kami pindah ke private
+
 ## 📚 Spesana24B
 Selalu berbeda dari lainnya dan tetap bersatu
 
